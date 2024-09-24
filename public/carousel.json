@@ -1,0 +1,46 @@
+{
+  "en": {
+    "carousel": {
+      "slides": [
+        {
+          "title": "Healthy Spaces, Better lives",
+          "description": "Sleep better, work more efficiently, reduce stress. A healthy space means a better quality of life every day."
+        },
+        {
+          "title": "Your space at your fingertips",
+          "description": "Monitor and control your living space from Anywhere."
+        },
+        {
+          "title": "Your haven of peace, our expertise",
+          "description": "Building your haven of peace is our passion. Entrust us with your project and we’ll transform your space into a true sanctuary."
+        },
+        {
+          "title": "From start to finish, we’re with you every step of the way",
+          "description": "From concept to completion, we help you create an interior that reflects your image, where well-being is at the heart of everything."
+        }
+      ]
+    }
+  },
+  "fr": {
+    "carousel": {
+      "slides": [
+        {
+          "title": "Espaces sains, meilleures vies",
+          "description": "Dormez mieux, travaillez plus efficacement, réduisez le stress. Un espace sain signifie une meilleure qualité de vie au quotidien."
+        },
+        {
+          "title": "Votre espace à portée de main",
+          "description": "Surveillez et contrôlez votre espace de vie de n'importe où."
+        },
+        {
+          "title": "Votre havre de paix, notre expertise",
+          "description": "Construire votre havre de paix est notre passion. Confiez-nous votre projet et nous transformerons votre espace en un véritable sanctuaire."
+        },
+        {
+          "title": "Du début à la fin, nous sommes avec vous à chaque étape",
+          "description": "Du concept à la réalisation, nous vous aidons à créer un intérieur qui reflète votre image, où le bien-être est au cœur de tout."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "greeting": {
+    "en": "Hello",
+    "fr": "Bonjour"
+  },
+  "meeting": {
+    "en": "10 PM",
+    "fr": "22 Heure"
+  }
+}

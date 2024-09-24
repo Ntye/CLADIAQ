@@ -1,0 +1,70 @@
+{
+  "en": {
+    "home": {
+      "title": "Home"
+    },
+    "about": {
+      "title": "About Us",
+      "subsections": {
+        "mission": "Our Mission",
+        "team": "The Team",
+        "faq": "FAQ"
+      }
+    },
+    "solutions": {
+      "title": "Solutions",
+      "subsections": {
+        "indoor": "Indoor Device",
+        "outdoor": "Outdoor Device",
+        "mobile_app": "Mobile App",
+        "ai": "Artificial Intelligence",
+        "data_collection": "Data Collection & Analysis"
+      }
+    },
+    "impact": {
+      "title": "Impact",
+      "subsections": {
+        "environmental": "Environmental Impact",
+        "health_tips": "Health Tips",
+        "tech_and_environment": "Technology & Environment"
+      }
+    },
+    "contact": {
+      "title": "Contact"
+    }
+  },
+  "fr": {
+    "home": {
+      "title": "Accueil"
+    },
+    "about": {
+      "title": "À propos",
+      "subsections": {
+        "mission": "Notre Mission",
+        "team": "L’Équipe",
+        "faq": "FAQ"
+      }
+    },
+    "solutions": {
+      "title": "Solutions",
+      "subsections": {
+        "indoor": "Dispositif intérieur",
+        "outdoor": "Dispositif extérieur",
+        "mobile_app": "Application mobile",
+        "ai": "Intelligence artificielle",
+        "data_collection": "Collecte & Analyse des Données"
+      }
+    },
+    "impact": {
+      "title": "Impact",
+      "subsections": {
+        "environmental": "Impact environnemental",
+        "health_tips": "Conseils santé",
+        "tech_and_environment": "Technologie & environnement"
+      }
+    },
+    "contact": {
+      "title": "Contact"
+    }
+  }
+}
