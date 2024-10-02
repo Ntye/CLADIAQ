@@ -1,0 +1,22 @@
+.faq {
+    padding-left: 15.625rem;
+    padding-bottom: 3.125rem;
+}
+
+.faq-image {
+    padding-right: 11.25rem;
+}
+
+.faq-container {
+    padding: 1rem 1.25rem 0 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title {
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
+}

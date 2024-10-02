@@ -59,7 +59,8 @@ function NavbarDefault({activeTab, setActiveTab}) {
   }
 
   return (
-    <nav className="nav">
+    <div className="nav">
+      {/*Logo*/}
       <a href="#home">
         <img
           src={`${scrolled ? Logo : LogoD}`}
@@ -162,7 +163,7 @@ function NavbarDefault({activeTab, setActiveTab}) {
         </Modal>
 
       </div>
-    </nav>
+    </div>
   );
 }
 

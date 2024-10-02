@@ -1,0 +1,35 @@
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.125rem;
+    cursor: pointer;
+    color: var(--dark-gray);
+    padding-bottom: 2rem;
+}
+
+.faq-question.active {
+    padding-bottom: 0;
+    color: var(--primary-blue);
+}
+
+.faq-answer {
+    color: #555;
+    animation: fadeIn 0.3s ease-in-out;
+    font-size: 1.125rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.875rem;
+}
+
+span {
+    font-size: 18px;
+    font-weight: bold;
+}

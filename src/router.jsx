@@ -1,6 +1,6 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
-import { Suspense } from "react";
-import App from "./App.jsx";
+import { Suspense, lazy } from "react";
+const LazyApp = lazy(() => import('./App.jsx'))
 
 const router = createBrowserRouter([
   {
@@ -9,7 +9,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/:language',
-    element: <App />
+    element: (
+        <Suspense fallback={<><h2>Loading</h2></>}>
+          <LazyApp/>
+        </Suspense>
+      )
   },
   {
     path: '*',

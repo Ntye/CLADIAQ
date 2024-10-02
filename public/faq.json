@@ -1,0 +1,78 @@
+{
+  "en": {
+    "q1": {
+      "question": "What is CLADIAQ?",
+      "answer": "CLADIAQ is a company that develops innovative hardware and software solutions to monitor and improve air quality using AI-enhanced insights."
+    },
+    "q2": {
+      "question": "How do your indoor and outdoor devices work?",
+      "answer": "Our indoor device monitors and purifies the air in homes and offices, while the outdoor device tracks environmental air pollution. Both devices provide real-time data through our mobile app."
+    },
+    "q3": {
+      "question": "What are the health effects of poor air quality?",
+      "answer": "Poor air quality can cause respiratory problems, heart diseases, and worsen conditions like asthma. Long-term exposure to air pollution can also lead to premature death."
+    },
+    "q4": {
+      "question": "How many people die due to air pollution in Cameroon each year?",
+      "answer": "It is estimated that around 20,000 people in Cameroon die prematurely each year due to air pollution-related health issues, according to the World Health Organization."
+    },
+    "q5": {
+      "question": "What kind of data do you collect?",
+      "answer": "We collect air quality data such as particulate matter (PM), CO2 levels, temperature, and humidity. This data is analyzed to provide actionable insights for improving air quality."
+    },
+    "q6": {
+      "question": "Is the mobile app necessary to use the devices?",
+      "answer": "While the devices function independently, the mobile app provides enhanced features such as notifications, air quality trends, and personalized health tips."
+    },
+    "q7": {
+      "question": "How does CLADIAQ contribute to improving public health?",
+      "answer": "By raising awareness and providing real-time air quality data, CLADIAQ helps users make informed decisions to protect their health from pollution-related risks."
+    },
+    "q8": {
+      "question": "Can I use the outdoor device in any location?",
+      "answer": "Yes, the outdoor device is designed to be portable and can be used in various locations to monitor environmental air conditions."
+    },
+    "q9": {
+      "question": "How does AI enhance the air quality monitoring process?",
+      "answer": "Our AI analyzes the data collected from the devices and provides personalized recommendations to improve air quality and safeguard your health."
+    }
+  },
+  "fr": {
+    "q1": {
+      "question": "Qu'est-ce que CLADIAQ ?",
+      "answer": "CLADIAQ est une entreprise qui développe des solutions matérielles et logicielles innovantes pour surveiller et améliorer la qualité de l'air grâce à des analyses basées sur l'IA."
+    },
+    "q2": {
+      "question": "Comment fonctionnent vos dispositifs intérieur et extérieur ?",
+      "answer": "Notre dispositif intérieur surveille et purifie l'air dans les maisons et bureaux, tandis que le dispositif extérieur suit la pollution de l'air environnemental. Les deux appareils fournissent des données en temps réel via notre application mobile."
+    },
+    "q3": {
+      "question": "Quels sont les effets de la mauvaise qualité de l'air sur la santé ?",
+      "answer": "Une mauvaise qualité de l'air peut causer des problèmes respiratoires, des maladies cardiaques et aggraver des conditions comme l'asthme. Une exposition prolongée à la pollution de l'air peut également entraîner des décès prématurés."
+    },
+    "q4": {
+      "question": "Combien de personnes meurent chaque année à cause de la pollution de l'air au Cameroun ?",
+      "answer": "On estime qu'environ 20 000 personnes au Cameroun meurent prématurément chaque année en raison de problèmes de santé liés à la pollution de l'air, selon l'Organisation mondiale de la santé."
+    },
+    "q5": {
+      "question": "Quels types de données collectez-vous ?",
+      "answer": "Nous collectons des données sur la qualité de l'air telles que les particules fines (PM), les niveaux de CO2, la température et l'humidité. Ces données sont analysées pour fournir des recommandations actionnables pour améliorer la qualité de l'air."
+    },
+    "q6": {
+      "question": "L'application mobile est-elle nécessaire pour utiliser les dispositifs ?",
+      "answer": "Bien que les appareils fonctionnent de manière autonome, l'application mobile offre des fonctionnalités améliorées telles que des notifications, des tendances de qualité de l'air et des conseils de santé personnalisés."
+    },
+    "q7": {
+      "question": "Comment CLADIAQ contribue-t-il à l'amélioration de la santé publique ?",
+      "answer": "En sensibilisant et en fournissant des données en temps réel sur la qualité de l'air, CLADIAQ aide les utilisateurs à prendre des décisions éclairées pour se protéger contre les risques liés à la pollution."
+    },
+    "q8": {
+      "question": "Puis-je utiliser le dispositif extérieur dans n'importe quel endroit ?",
+      "answer": "Oui, le dispositif extérieur est conçu pour être portable et peut être utilisé dans divers endroits pour surveiller les conditions environnementales de l'air."
+    },
+    "q9": {
+      "question": "Comment l'IA améliore-t-elle le processus de surveillance de la qualité de l'air ?",
+      "answer": "Notre IA analyse les données collectées par les dispositifs et fournit des recommandations personnalisées pour améliorer la qualité de l'air et protéger votre santé."
+    }
+  }
+}
