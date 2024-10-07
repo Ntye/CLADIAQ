@@ -1,5 +1,7 @@
 import React, { useState, useRef } from 'react';
 import "./styles/AboutUs.css";
+import Icon from "../assets/Faq/Icon.svg";
+import Title from "../utilities/Title.jsx";
 
 function AboutUs() {
   const homeRef = useRef(null);
@@ -14,6 +16,10 @@ function AboutUs() {
 
   return (
     <div className="about-us  yo">
+      <Title
+        imgSrc={Icon}
+        section="About Us"
+      />
       <div id="linked" className="tabs-navigation justify-content-between">
         <button
           className={`tab-button ${activeTab === 'home' ? 'active' : ''}`}

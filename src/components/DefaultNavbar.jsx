@@ -5,10 +5,10 @@ import Logo from "../assets/Navbar/Logo.svg";
 import LogoD from "../assets/Navbar/WhiteLogo.svg";
 import Menu from "../assets/Navbar/menu.svg"
 import "../index.css";
-import "./styles/NavbarDefault.css";
+import "./styles/DefaultNavbar.css";
 import { BiWorld} from "react-icons/bi";
 
-function NavbarDefault({activeTab, setActiveTab}) {
+function DefaultNavbar({activeTab, setActiveTab}) {
   const [content, setContent] = useState(null);
   const [show, setShow] = useState(false);
   const { language } = useParams();
@@ -167,5 +167,5 @@ function NavbarDefault({activeTab, setActiveTab}) {
   );
 }
 
-export default NavbarDefault;
+export default DefaultNavbar;
 

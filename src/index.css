@@ -24,6 +24,22 @@ body {
 
 }
 
+
+.spacing {
+  padding: 50px 200px;
+}
+
+@media (max-width: 1400px) {
+  .spacing {
+    padding: var(--side-mobile-spacing);
+  }
+}
+
+/* Styles for phones */
+@media (max-width: 750px) {
+
+}
+
 .element {
   animation: zoomInOut 4s infinite;
 }

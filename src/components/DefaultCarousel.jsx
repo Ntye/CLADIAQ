@@ -37,12 +37,12 @@ const DefaultCarousel = () => {
           </p>
         </div>
       </SwiperSlide>
-      <SwiperSlide>
-        <VerticalSlide
-          imgSrc={img1}
-          color="#FFFFF"
-        />
-      </SwiperSlide>
+      {/*<SwiperSlide>*/}
+      {/*  <VerticalSlide*/}
+      {/*    imgSrc={img1}*/}
+      {/*    color="#FFFFF"*/}
+      {/*  />*/}
+      {/*</SwiperSlide>*/}
     </Swiper>
   );
 };
