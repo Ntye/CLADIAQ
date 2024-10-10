@@ -1,5 +1,5 @@
 .carousel {
-    height: 100%;
+    height: 100vh;
 }
 
 .carousel-image {
@@ -21,10 +21,19 @@
 .carousel-title {
     font-size: 4rem;
     padding-bottom: 7.5rem;
-    width: 700px;
 }
 
 .carousel-description {
     font-size: 1.5rem;
-    width: 600px;
+}
+
+.swiper {
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+
+@keyframes slide-up {
+    100% {
+        transform: translateX(-100%);
+    }
 }

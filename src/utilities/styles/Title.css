@@ -1,0 +1,16 @@
+.section-title {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    /*padding-left: 60.3125rem;*/
+    padding-left: 62.5rem;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+}
+
+.section-title-text {
+    padding-top: 1rem;
+    padding-left: 2.5rem;
+    font-size: 1.625rem;
+}

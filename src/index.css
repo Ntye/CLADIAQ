@@ -2,10 +2,6 @@ body {
   background-color: #F1F6FA;
 }
 
-.yo {
-  height: 80vh;
-}
-
 :root {
   /*Color*/
   --primary-blue: #2E73FF;
@@ -26,6 +22,38 @@ body {
   --side-mobile-spacing: 15px;
   --top-spacing: 100px;
 
+}
+
+
+.spacing {
+  padding: 50px 200px;
+}
+
+@media (max-width: 1400px) {
+  .spacing {
+    padding: var(--side-mobile-spacing);
+  }
+}
+
+/* Styles for phones */
+@media (max-width: 750px) {
+
+}
+
+.element {
+  animation: zoomInOut 4s infinite;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9); /* Zoom in */
+  }
+  100% {
+    transform: scale(1); /* Zoom out */
+  }
 }
 
 .primary-blue-logo {
@@ -51,6 +79,8 @@ body {
 .secondary-blue {
   color: var(--secondary-blue);
 }
+
+
 
 /*Lato*/
 .lato-thin {

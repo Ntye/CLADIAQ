@@ -17,7 +17,6 @@
         "indoor": "Indoor Device",
         "outdoor": "Outdoor Device",
         "mobile_app": "Mobile App",
-        "ai": "Artificial Intelligence",
         "data_collection": "Data Collection & Analysis"
       }
     },
@@ -51,7 +50,6 @@
         "indoor": "Dispositif intérieur",
         "outdoor": "Dispositif extérieur",
         "mobile_app": "Application mobile",
-        "ai": "Intelligence artificielle",
         "data_collection": "Collecte & Analyse des Données"
       }
     },

@@ -1,125 +1,128 @@
-.nav {
-    position: fixed;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: var(--nav-top-spacing) var(--nav-web-spacing);
-    z-index: 1;
-}
+/*.nav {*/
+/*    position: fixed;*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    padding: var(--nav-top-spacing) var(--nav-web-spacing) 0 var(--nav-web-spacing);*/
+/*    z-index: 1000;*/
+/*}*/
 
-.nav a, .nav .dropbtn {
-    /*color: #f6f5f5;*/
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-block;
-}
+/*.nav a, .nav .dropbtn {*/
+/*    text-decoration: none;*/
+/*    cursor: pointer;*/
+/*    display: inline-block;*/
+/*}*/
 
-.links {
-    display: flex;
-    flex-direction: row;
-}
+/*.links {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*}*/
 
-.link-active {
-    color: rgba(196, 232, 255, 0.42);
+/*!*.link-active {*!*/
+/*!*    color: rgba(196, 232, 255, 0.42);*!*/
 
-}
+/*!*}*!*/
 
-.mobile-link {
-    color: #cf2929;
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-block;
-}
+/*.mobile-link {*/
+/*    color: #cf2929;*/
+/*    text-decoration: none;*/
+/*    cursor: pointer;*/
+/*    display: inline-block;*/
+/*}*/
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-    margin-top: -3px;
-}
+/*.dropdown {*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    margin-top: -3px;*/
+/*}*/
 
-.dropbtn {
-    z-index: 20;
-    background: none;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 16px;
-}
+/*.dropbtn {*/
+/*    z-index: 20;*/
+/*    background: none;*/
+/*    border: none;*/
+/*    padding: 10px;*/
+/*    cursor: pointer;*/
+/*    font-size: 16px;*/
+/*}*/
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    left: 0;
-    top: 100%;
-}
+/*.dropdown-content {*/
+/*    display: none;*/
+/*    position: absolute;*/
+/*    background-color: #f9f9f9;*/
+/*    min-width: 160px;*/
+/*    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);*/
+/*    z-index: 1;*/
+/*    left: 0;*/
+/*    top: 100%;*/
+/*}*/
 
-.dropdown-content .dropdown-item {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
+/*.dropdown-content .dropdown-item {*/
+/*    color: black;*/
+/*    padding: 12px 16px;*/
+/*    text-decoration: none;*/
+/*    display: block;*/
+/*}*/
 
-.dropdown-content .dropdown-item:hover {
-    background-color: #ddd;
-}
+/*.dropdown-content .dropdown-item:hover {*/
+/*    background-color: #ddd;*/
+/*}*/
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+/*.dropbtn:hover nav-link:hover {*/
+/*    color: #cf2929;*/
+/*}*/
 
-.dropdown:hover .dropbtn {
-    background-color: rgba(58, 66, 47, 0.18);
-}
+/*.dropdown:hover .dropdown-content {*/
+/*    display: block;*/
+/*}*/
 
-.spacing {
-    margin-right: 100px;
-}
+/*.dropdown:hover {*/
+/*    background-color: rgba(58, 66, 47, 0.18);*/
+/*}*/
 
-.lang-icon {
-    margin-top: 8px;
-}
+/*.spacing {*/
+/*    margin-right: 100px;*/
+/*}*/
 
-.nav-lang {
-    width: 110px;
-    background-color: rgba(51, 51, 51, 0);
-    /*color: #fafafa;*/
-    border: none;
-}
+/*.lang-icon {*/
+/*    margin-top: 8px;*/
+/*}*/
 
-.mobile-links {
-    display: none;
-}
+/*.nav-lang {*/
+/*    width: 110px;*/
+/*    background-color: rgba(51, 51, 51, 0);*/
+/*    !*color: #fafafa;*!*/
+/*    border: none;*/
+/*}*/
 
-@media (max-width: 1400px) {
-    .nav {
-        padding: var(--side-mobile-spacing) var(--side-mobile-spacing);
-    }
-}
+/*.mobile-links {*/
+/*    display: none;*/
+/*}*/
 
-/* Styles for phones */
-@media (max-width: 750px) {
-    .nav {
-        padding: var(--side-mobile-spacing) var(--side-mobile-spacing);
-    }
+/*@media (max-width: 1400px) {*/
+/*    .nav {*/
+/*        padding: var(--side-mobile-spacing) var(--side-mobile-spacing);*/
+/*    }*/
+/*}*/
 
-    .links {
-        display: none;
-    }
+/*!* Styles for phones *!*/
+/*@media (max-width: 750px) {*/
+/*    .nav {*/
+/*        padding: var(--side-mobile-spacing) var(--side-mobile-spacing);*/
+/*    }*/
 
-    .mobile-links {
-        display: block;
-    }
+/*    .links {*/
+/*        display: none;*/
+/*    }*/
 
-    .div {
-        width: 95%;
-        padding: 10px;
-        font-size: 12px;
-        background-color: lightcoral;
-    }
-}
+/*    .mobile-links {*/
+/*        display: block;*/
+/*    }*/
+
+/*    .div {*/
+/*        width: 95%;*/
+/*        padding: 10px;*/
+/*        font-size: 12px;*/
+/*        background-color: lightcoral;*/
+/*    }*/
+/*}*/

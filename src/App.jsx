@@ -1,8 +1,12 @@
-import AboutUs from "./content/AboutUs.jsx";
+import AboutUs from "./components/AboutUs.jsx";
 import React, {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import NavbarDefault from "./components/NavbarDefault.jsx";
 import LandingCarousel from "./components/LandingCarousel.jsx";
+import Faq from "./components/Faq.jsx";
+import Footer from "./components/Footer.jsx";
+import DefaultCarousel from "./components/DefaultCarousel.jsx";
+import DefaultNavbar from "./components/DefaultNavbar.jsx";
 
 
 function App() {
@@ -32,12 +36,22 @@ function App() {
 
   return (
     <>
-      {/*<NavbarCustom />*/}
-      <NavbarDefault activeTab={activeTab}  setActiveTab={setActiveTab} />
-      <LandingCarousel/>
+      {/*<NavbarDefault activeTab={activeTab} setActiveTab={setActiveTab}/>*/}
+      <DefaultNavbar activeTab={activeTab} setActiveTab={setActiveTab}/>
+      {/*<LandingCarousel/>*/}
+      <DefaultCarousel/>
       <h1 className="yo">{content.greeting[language]}</h1>
       <p className="yo">{content.meeting[language]}</p>
-      <AboutUs/>
+
+      <section id="about-us" className="section">
+        <AboutUs/>
+      </section>
+
+      <section id="faq" className="section">
+        <Faq/>
+      </section>
+
+      <Footer/>
     </>
   )
 }

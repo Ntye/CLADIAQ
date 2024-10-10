@@ -1,0 +1,74 @@
+import './styles/Faq.css';
+import FAQItem from '../utilities/FaqItem.jsx';
+import React, {useEffect, useState} from "react";
+import Icon from "../assets/Faq/Icon.svg";
+import Title from "../utilities/Title.jsx";
+import Image from "../assets/Faq/Image.svg";
+import {useNavigate, useParams} from "react-router-dom";
+
+function Faq() {
+  const [activeIndex, setActiveIndex] = useState(null);
+  const [content, setContent] = useState(null);
+  const { language } = useParams();
+  const navigate = useNavigate();
+
+  const faqArray = content ? Object.keys(content).map((key) => content[key]) : [];
+
+  const toggleFAQ = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  useEffect(() => {
+    // Fetch language JSON data based on the current param
+    const fetchLanguage = async () => {
+      const response = await fetch('/faq.json');
+      const data = await response.json();
+      setContent(data[language]);
+      console.log(content)
+    };
+    fetchLanguage();
+  }, [language]);
+
+  const handleLanguageChange = (e) => {
+    const selectedLanguage = e.target.value === '1' ? 'fr' : 'en';
+    navigate(`/${selectedLanguage}`);
+  };
+
+  if (!content) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <div>
+      <Title
+        imgSrc={Icon}
+        section="FAQ Question"
+      />
+      <div className="faq d-flex flex-row">
+        <img
+          alt="faq"
+          src={Image}
+          className="faq-image"
+        />
+        <div className="faq-left">
+          <h3 className="poppins-semibold faq-title">Frequently asked questions</h3>
+
+          <div className="faq-container">
+            {faqArray.map((faq, index) => (
+              <FAQItem
+                key={index}
+                faq={faq}
+                index={index}
+                toggleFAQ={toggleFAQ}
+                activeIndex={activeIndex}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  );
+}
+
+export default Faq;
