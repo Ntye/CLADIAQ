@@ -36,12 +36,10 @@ function App() {
 
   return (
     <>
-      {/*<NavbarDefault activeTab={activeTab} setActiveTab={setActiveTab}/>*/}
-      <DefaultNavbar activeTab={activeTab} setActiveTab={setActiveTab}/>
+      <NavbarDefault activeTab={activeTab} setActiveTab={setActiveTab}/>
+      {/*<DefaultNavbar activeTab={activeTab} setActiveTab={setActiveTab}/>*/}
       {/*<LandingCarousel/>*/}
       <DefaultCarousel/>
-      <h1 className="yo">{content.greeting[language]}</h1>
-      <p className="yo">{content.meeting[language]}</p>
 
       <section id="about-us" className="section">
         <AboutUs/>
