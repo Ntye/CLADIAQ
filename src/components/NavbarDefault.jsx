@@ -22,7 +22,7 @@ function NavbarDefault({activeTab, setActiveTab}) {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight) {
+      if (window.scrollY > window.innerHeight-100) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -38,6 +38,7 @@ function NavbarDefault({activeTab, setActiveTab}) {
 
   const handleTabClick = (tab) => {
     setActiveTab(tab); // Set the active tab when a service is clicked
+    console.log(tab)
   };
 
   useEffect(() => {
@@ -62,7 +63,7 @@ function NavbarDefault({activeTab, setActiveTab}) {
     return (
       <>
         {['lg'].map((expand) => (
-          <Navbar key={expand} expand={expand} className="nav">
+          <Navbar key={expand} expand={expand} className={`${scrolled ? 'nav-width' : ''} nav`}>
             <Container fluid>
               <Navbar.Brand href="#home">
                 <img
@@ -104,8 +105,8 @@ function NavbarDefault({activeTab, setActiveTab}) {
                         className={`dropbtn poppins-semibold`}
                       >
                         <NavDropdown.Item
-                          className="dropdown-item raleway-regular"
                           href="#mission"
+                          className="dropdown-item  raleway-regular"
                         >
                           {content.about.subsections.mission}
                         </NavDropdown.Item>
@@ -132,15 +133,17 @@ function NavbarDefault({activeTab, setActiveTab}) {
                         className={`dropbtn poppins-semibold`}
                         href="#solution"
                       >
-                        <NavDropdown.Item
+                      <NavDropdown.Item
                           href="#indoor"
                           className="dropdown-item raleway-regular"
+                          onClick={() => handleTabClick('indoor')}
                         >
                           {content.solutions.subsections.indoor}
                         </NavDropdown.Item>
                         <NavDropdown.Item
                           className="dropdown-item raleway-regular"
                           href="#outdoor"
+                          onClick={() => handleTabClick('outdoor')}
                         >
                           {content.solutions.subsections.outdoor}
                         </NavDropdown.Item>
@@ -148,6 +151,7 @@ function NavbarDefault({activeTab, setActiveTab}) {
                         <NavDropdown.Item
                           className="dropdown-item raleway-regular"
                           href="#mobileApp"
+                          onClick={() => handleTabClick('mobileApp')}
                         >
                           {content.solutions.subsections.mobile_app}
                         </NavDropdown.Item>

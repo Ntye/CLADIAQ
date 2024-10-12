@@ -1,0 +1,34 @@
+.features {
+    padding-top: 1.25rem;
+    padding-bottom: 3.125rem;
+    background-color: var(--primary-blue);
+}
+
+.features-left {
+    padding-right: 25rem;
+}
+
+.features-logo {
+    padding-bottom: 3.125rem;
+}
+
+.features-text {
+    color: var(--primary-white);
+    margin-bottom: 3.125rem;
+}
+
+.features-button {
+    font-size: 1.125rem;
+    color: black;
+    background-color: var(--primary-white);
+    width: 12.5rem;
+    height: 3.125rem;
+}
+
+.features-right {
+    padding-top: 2.5rem;
+}
+
+.features-images {
+    margin-left: 1.25rem;
+}

@@ -9,6 +9,10 @@
     color: var(--primary-blue-logo);
 }
 
+.nav-width {
+    background-color: var(--primary-white);
+}
+
 .nav-logo {
     margin-right: 100px;
 }
@@ -31,4 +35,18 @@
     width: 110px;
     background-color: rgba(51, 51, 51, 0);
     border: none;
+}
+
+
+@media (max-width: 1400px) {
+    .nav {
+        padding: var(--side-mobile-spacing) var(--side-mobile-spacing);
+    }
+}
+
+/* Styles for phones */
+@media (max-width: 750px) {
+    .nav {
+        padding: var(--side-mobile-spacing) var(--side-mobile-spacing);
+    }
 }

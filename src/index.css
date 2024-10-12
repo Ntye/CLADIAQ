@@ -41,7 +41,7 @@ body {
 }
 
 .element {
-  animation: zoomInOut 4s infinite;
+  animation: zoomInOut 6s infinite;
 }
 
 @keyframes zoomInOut {
@@ -49,7 +49,7 @@ body {
     transform: scale(1);
   }
   50% {
-    transform: scale(0.9); /* Zoom in */
+    transform: scale(0.8); /* Zoom in */
   }
   100% {
     transform: scale(1); /* Zoom out */

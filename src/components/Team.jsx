@@ -1,0 +1,131 @@
+import Icon from "../assets/Icon.svg";
+import Harold from "../assets/Team/Harold.svg"
+import Nina from "../assets/Team/Nina.svg"
+import Nathanael from "../assets/Team/Nathanael.svg"
+import Donald from "../assets/Team/Donald.svg"
+import Estelle from "../assets/Team/Estelle.svg"
+import Wilfred from "../assets/Team/Wilfred.svg"
+import HighFive from "../assets/Team/HighFive.svg"
+import "./styles/Team.css"
+import TeamMember from "../utilities/TeamMember.jsx";
+import Title from "../utilities/Title.jsx";
+import React, {useEffect, useState} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import {useNavigate, useParams} from "react-router-dom";
+
+function Team() {
+
+  const [content, setContent] = useState(null);
+  const { language } = useParams();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Fetch language JSON data based on the current param
+    const fetchLanguage = async () => {
+      const response = await fetch('/team.json');
+      const data = await response.json();
+      setContent(data[language]);
+    };
+
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      once: false,    // Animate more than once when scrolling
+    });
+    fetchLanguage();
+  }, [language]);
+
+  const handleLanguageChange = (e) => {
+    const selectedLanguage = e.target.value === '1' ? 'fr' : 'en';
+    navigate(`/${selectedLanguage}`);
+  };
+
+  if (!content) {
+    return <div>Loading...</div>;
+  }
+
+
+  return (
+    <div>
+      <Title
+        imgSrc={Icon}
+        section="Our Team"
+      />
+
+      <div className="team d-flex flex-row">
+        <div>
+          <div data-aos="fade-right" className="team-images d-flex flex-row">
+            <TeamMember
+              name={content.member_1.name}
+              post={content.member_1.post}
+              imgSrc={Harold}
+              className="team-member"
+              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+            />
+
+            <TeamMember
+              name={content.member_2.name}
+              post={content.member_2.post}
+              imgSrc={Nina}
+              className="team-member"
+              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+            />
+
+            <TeamMember
+              name={content.member_3.name}
+              post={content.member_3.post}
+              imgSrc={Nathanael}
+              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+            />
+          </div>
+
+          <div data-aos="fade-left" className="team-images d-flex flex-row">
+            <TeamMember
+              name={content.member_4.name}
+              post={content.member_4.post}
+              imgSrc={Donald}
+              className="team-member"
+              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+            />
+
+            <TeamMember
+              name={content.member_5.name}
+              post={content.member_5.post}
+              imgSrc={Estelle}
+              className="team-member"
+              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+            />
+
+            <TeamMember
+              name={content.member_6.name}
+              post={content.member_6.post}
+              imgSrc={Wilfred}
+              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+            />
+          </div>
+        </div>
+
+        <img
+          alt="high-five"
+          src={HighFive}
+          className="element team-ilustration"
+        />
+      </div>
+
+    </div>
+  );
+}
+
+export default Team;
