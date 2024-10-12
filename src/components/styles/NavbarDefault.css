@@ -8,6 +8,16 @@
 /*    z-index: 1000;*/
 /*}*/
 
+/*.nav-logo {*/
+/*    margin-right: 50px;*/
+/*}*/
+
+/*.nav-body {*/
+/*    justify-content: space-between;*/
+/*    display: flex;*/
+
+/*}*/
+
 /*.nav a, .nav .dropbtn {*/
 /*    text-decoration: none;*/
 /*    cursor: pointer;*/
@@ -41,9 +51,9 @@
 /*    z-index: 20;*/
 /*    background: none;*/
 /*    border: none;*/
-/*    padding: 10px;*/
 /*    cursor: pointer;*/
 /*    font-size: 16px;*/
+/*    margin-top: -5px;*/
 /*}*/
 
 /*.dropdown-content {*/
@@ -109,14 +119,6 @@
 /*@media (max-width: 750px) {*/
 /*    .nav {*/
 /*        padding: var(--side-mobile-spacing) var(--side-mobile-spacing);*/
-/*    }*/
-
-/*    .links {*/
-/*        display: none;*/
-/*    }*/
-
-/*    .mobile-links {*/
-/*        display: block;*/
 /*    }*/
 
 /*    .div {*/
