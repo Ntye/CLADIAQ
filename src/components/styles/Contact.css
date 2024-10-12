@@ -1,0 +1,16 @@
+.contact {
+    padding: 6.25rem 15.625rem 6.25rem 15.625rem;
+    justify-content: space-between;
+}
+
+.contact-title {
+    padding-bottom: 3.125rem;
+    width: 40.625rem;
+    font-size: 2rem;
+}
+
+.contact-subtitle {
+    width: 37.5rem;
+    font-size: 1rem;
+    padding-bottom: 10rem;
+}

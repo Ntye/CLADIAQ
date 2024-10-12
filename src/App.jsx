@@ -7,6 +7,10 @@ import Faq from "./components/Faq.jsx";
 import Footer from "./components/Footer.jsx";
 import DefaultCarousel from "./components/DefaultCarousel.jsx";
 import DefaultNavbar from "./components/DefaultNavbar.jsx";
+import Solution from "./components/Solution.jsx";
+import Team from "./components/Team.jsx";
+import Contact from "./components/Contact.jsx";
+import Feature from "./components/Feature.jsx";
 
 
 function App() {
@@ -38,15 +42,34 @@ function App() {
     <>
       <NavbarDefault activeTab={activeTab} setActiveTab={setActiveTab}/>
       {/*<DefaultNavbar activeTab={activeTab} setActiveTab={setActiveTab}/>*/}
-      {/*<LandingCarousel/>*/}
-      <DefaultCarousel/>
 
-      <section id="about-us" className="section">
+      <section id="home" className="section">
+        <DefaultCarousel/>
+      </section>
+
+      <section id="mission" className="section">
         <AboutUs/>
+      </section>
+
+      <section id="mobileApp" className="section">
+        <section id="indoor" className="section">
+          <section id="outdoor" className="section">
+            <Solution activeTab={activeTab} setActiveTab={setActiveTab}/>
+          </section>
+        </section>
+      </section>
+
+
+      <section id="team" className="section">
+        <Team/>
       </section>
 
       <section id="faq" className="section">
         <Faq/>
+      </section>
+
+      <section id="contact" className="section">
+        <Contact/>
       </section>
 
       <Footer/>

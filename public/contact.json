@@ -1,0 +1,30 @@
+{
+  "en": {
+    "title": "Contact",
+    "subtitle": "Left questions? Contacts us now for a free consultation and free trial!",
+    "text": "Our team is here to assist you. Whether you need more information about our services or want personalized advice, don’t hesitate to reach out. We’re committed to helping you experience the best in air quality solutions. Get in touch now for your free consultation and trial!",
+    "email": {
+      "title": "Email Address",
+      "content": "cladiaq24@gmail.com"
+    },
+    "phone": {
+      "title": "Phone Number",
+      "content": "+237 6 78 29 32 63"
+    }
+  },
+
+  "fr": {
+    "title": "Contact",
+    "subtitle": "Des questions ? Contactez-nous dès maintenant pour une consultation gratuite et un essai gratuit !",
+    "text": "Notre équipe est là pour vous aider. Que vous ayez besoin de plus d'informations sur nos services ou que vous souhaitiez des conseils personnalisés, n'hésitez pas à nous contacter. Nous nous engageons à vous faire découvrir le meilleur des solutions pour la qualité de l'air. Contactez-nous dès maintenant pour votre consultation et votre essai gratuits !",
+    "email": {
+      "title": "Adresse Email",
+      "content": "cladiaq24@gmail.com"
+    },
+    "phone": {
+      "title": "Numéro de Téléphone",
+      "content": "+237 6 78 29 32 63"
+    }
+  }
+
+}

@@ -1,0 +1,51 @@
+{
+  "en": {
+    "title": "About Us",
+    "about_us": {
+      "title": "Our Company Overview",
+      "parts": {
+        "part_1": "CLADIAQ embodies innovation, much like the pioneers who have reshaped entire industries. Just as Petroforce transformed the oil sector, CLADIAQ redefines air quality standards. Through cutting-edge technology, we are creating solutions for cleaner air and paving the way for a future where air quality is a universal priority.",
+        "part_2": "As a pioneering brand, CLADIAQ is committed to revolutionizing indoor air quality. With a foundation built on decades of industry expertise, we offer advanced solutions designed to enhance health and well-being for everyone."
+      },
+      "buttons": {
+        "one": "Product",
+        "two": "Our Team"
+      }
+    },
+    "indoor": {
+      "title": "The all-new platform for improving inner well-being",
+      "text": "CLADIAQ is a revolutionary platform that guides you towards optimal inner well-being. Thanks to its prototypes, CLADIAQ helps you reduce stress, improve sleep and regain emotional balance. Discover now how CLADIAQ can transform your life.",
+      "buttons": "Learn More"
+    },
+    "outdoor": {
+      "title": "Radically new data solutions",
+      "text": "CLADIAQ offers radically new data solutions to improve your well-being. By collecting and analyzing precise data from your space, CLADIAQ offers personalized recommendations to optimize your daily life. Discover how our innovative approach to data can help you achieve your wellness goals.",
+      "buttons": "Learn More"
+    }
+  },
+
+  "fr": {
+    "title": "A Propos",
+    "about_us": {
+      "title": "Aperçu de notre entreprise",
+      "parts": {
+        "part_1": "CLADIAQ incarne l'innovation, tout comme les pionniers qui ont transformé des industries entières. Tout comme Petroforce a révolutionné le secteur pétrolier, CLADIAQ redéfinit les normes de qualité de l'air. Grâce à des technologies de pointe, nous créons des solutions pour un air plus pur et ouvrons la voie à un avenir où la qualité de l'air est une priorité universelle.",
+        "part_2": "En tant que marque pionnière, CLADIAQ s'engage à révolutionner la qualité de l'air intérieur. Avec des décennies d'expertise dans le secteur, nous offrons des solutions avancées conçues pour améliorer la santé et le bien-être de tous."
+      },
+      "buttons": {
+        "one": "Produit",
+        "two": "Notre Equipe"
+      }
+    },
+    "indoor": {
+      "title": "La toute nouvelle plateforme pour améliorer le bien-être intérieur",
+      "text": "CLADIAQ est une plateforme révolutionnaire qui vous guide vers un bien-être intérieur optimal. Grâce à ses prototypes, CLADIAQ vous aide à réduire le stress, améliorer votre sommeil et retrouver un équilibre émotionnel. Découvrez dès maintenant comment CLADIAQ peut transformer votre vie.",
+      "buttons": "En Savoir Plus"
+    },
+    "outdoor": {
+      "title": "La toute nouvelle plateforme pour améliorer le bien-être intérieur",
+      "text": "CLADIAQ propose des solutions de données radicalement nouvelles pour améliorer votre bien-être. En collectant et en analysant des données précises sur votre espace, CLADIAQ vous offre des recommandations personnalisées pour optimiser votre vie quotidienne. Découvrez comment notre approche innovante des données peut vous aider à atteindre vos objectifs de bien-être.",
+      "buttons": "En Savoir Plus"
+    }
+  }
+}

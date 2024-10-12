@@ -1,0 +1,57 @@
+{
+  "en": {
+    "title": "About Us",
+    "member_1": {
+      "name": "Harold",
+      "post": "Project Owner"
+    },
+    "member_2": {
+      "name": "Nina",
+      "post": "Project Manager"
+    },
+    "member_3": {
+      "name": "Nathanael",
+      "post": "UX/UI Designer"
+    },
+    "member_4": {
+      "name": "Donald",
+      "post": "Data Scientist"
+    },
+    "member_5": {
+      "name": "Estelle",
+      "post": "Mecatronics"
+    },
+    "member_6": {
+      "name": "Wilfred",
+      "post": "Mobile Developper"
+    }
+  },
+
+  "fr": {
+    "title": "A Propos",
+    "member_1": {
+      "name": "Harold",
+      "post": "Porteur de Projet"
+    },
+    "member_2": {
+      "name": "Nina",
+      "post": "Chef de Projet"
+    },
+    "member_3": {
+      "name": "Nathanael",
+      "post": "Designer UX/UI"
+    },
+    "member_4": {
+      "name": "Donald",
+      "post": "Data Scientist"
+    },
+    "member_5": {
+      "name": "Estelle",
+      "post": "Mécatronicienne"
+    },
+    "member_6": {
+      "name": "Wilfred",
+      "post": "Développeur Mobile"
+    }
+  }
+}

@@ -3,10 +3,12 @@
     flex-direction: row;
     text-align: center;
     justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .section-title-text {
-    /*padding-top: 1rem;*/
+
     padding-left: 2.5rem;
     font-size: 1.625rem;
 }
