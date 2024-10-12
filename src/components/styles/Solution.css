@@ -30,10 +30,6 @@
     margin-top: 50px;
 }
 
-.product-image {
-    /*padding-right: 13.75rem;*/
-}
-
 .product-title {
     font-size: 2rem;
     padding-bottom: 2.5rem;
@@ -45,36 +41,16 @@
     padding-bottom: 2.25rem;
 }
 
-.content {
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-}
-
-.cash-area {
-    border-radius: 0.625rem;
-    padding-right: 0.625rem;
-    margin-right: 0.625rem;
-    background-color: var(--secondary-gray);
-}
-
-.price {
-    margin-left: 0.5rem;
-    font-size: 2rem;
-}
-
-.price-text {
-    font-size: 1.25rem;
-}
-
-.price-text-number {
-    padding-bottom: 3rem;
-}
-
 .product-description {
     padding-bottom: 3rem;
     font-size: 1rem;
     width: 40.75rem;
+}
+
+.content {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
 }
 
 .qty {
@@ -97,10 +73,7 @@
 }
 
 .cart-button {
-    /*width: 15rem;*/
-    /*height: 3.75rem;*/
     width: 12.5rem;
-    /*height: 3.75rem;*/
     height: 3rem;
     color: var(--primary-white);
     font-size: 1rem;
@@ -110,4 +83,79 @@
     box-shadow: 0 12px 30px rgba(24, 92, 255, 0.18);
     transition: box-shadow 0.3s ease;
 }
+
+@media (max-width: 1400px) {
+
+    .tab-content {
+        margin-top: 10px;
+    }
+
+    .product-image {
+        width: 300px;
+        padding-top: 40px;
+    }
+
+    .product-text {
+        /*padding: 0 15px;*/
+        width: 50vw;
+    }
+
+    .product-title {
+        font-size: 1.3rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        width: 50vw;
+    }
+
+    .product-subtitle {
+        padding-bottom: 5px;
+    }
+
+    .product-description {
+        padding-bottom: 1rem;
+        font-size: 15px;
+        width: 50vw;
+    }
+
+}
+
+/* Styles for phones */
+@media (max-width: 750px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-content {
+        margin-top: 20px;
+    }
+
+    .product-image {
+        width: 200px;
+    }
+
+    .product-text {
+        padding: 0 15px;
+        width: 100vw;
+    }
+
+    .product-title {
+        font-size: 1.3rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        width: 450px;
+    }
+
+    .product-subtitle {
+        padding-bottom: 5px;
+    }
+
+    .product-description {
+        padding-bottom: 1rem;
+        font-size: 15px;
+        width: 90vw;
+    }
+}
+
+
 

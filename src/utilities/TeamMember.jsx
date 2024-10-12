@@ -8,24 +8,24 @@ import PropTypes from 'prop-types';
 const TeamMember = ({ name, post, imgSrc, facebookLink, twitterLink, linkedInLink }) => {
   return (
     <div className="team-card">
-      <img src={imgSrc} className="team-image" alt="team-image" />
+      <img src={imgSrc} className="team-image" alt="team-image"/>
       <div className="d-flex flex-row justify-content-between team-member-description">
         <div className="team-member">
           <h3 className="member-name raleway-bold">{name}</h3>
-          <p className="member-post lato-regular primary-gray">{post}</p>
         </div>
         <div className="team-socials">
           <Link to={facebookLink} className="team-social-link">
-            <img src={Facebook} alt="facebook" />
+            <img src={Facebook} alt="facebook"/>
           </Link>
           <Link to={twitterLink} className="team-social-link">
-            <img src={Twitter} alt="twitter" />
+            <img src={Twitter} alt="twitter"/>
           </Link>
           <Link to={linkedInLink} className="team-social-link">
-            <img src={LinkedIn} alt="linkedIn" />
+            <img src={LinkedIn} alt="linkedIn"/>
           </Link>
         </div>
       </div>
+      <p className="member-post lato-regular primary-gray">{post}</p>
     </div>
   );
 };

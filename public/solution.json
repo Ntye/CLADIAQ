@@ -1,0 +1,52 @@
+{
+  "en": {
+    "indoor": {
+      "title": "Indoor",
+      "text": "Ultra-sophisticated internal device, on the doorstep of all",
+      "by": "By",
+      "description": "Be among the first to experience CLADIAQ. Reserve your exclusive prototype now and join the wellness revolution.",
+      "button": "Contact Us"
+    },
+    "outdoor": {
+      "title": "Outdoor",
+      "text": "Experience the outdoors like never before",
+      "by": "By",
+      "description": "Be among the first to enjoy our innovative outdoor device. Order your prototype now and transform your understanding of the air quality around you.",
+      "button": "Contact Us"
+    },
+    "mobile": {
+      "title": "Mobile App",
+      "text": "A groundbreaking mobile app, just a tap away",
+      "by": "By",
+      "description": "Be among the first to discover the CLADIAQ app. Download it now and transform your everyday wellness.",
+      "button": "Download Now"
+    }
+  },
+
+  "fr": {
+    "indoor": {
+      "title": "Intérieur",
+      "text": "Dispositif interne ultra-sophistiqué, à la portée de tous",
+      "by": "Par",
+      "description": "Soyez parmi les premiers à vivre l’expérience CLADIAQ. Réservez dès maintenant votre prototype exclusif et rejoignez la révolution du bien-être.",
+      "button": "Contactez Nous"
+
+    },
+    "outdoor": {
+      "title": "Extérieur",
+      "text": "Découvrez l'extérieur comme jamais auparavant",
+      "by": "Par",
+      "description": "Soyez parmi les premiers à profiter de notre dispositif extérieur innovant. Commandez votre prototype dès maintenant et transformez votre compréhension de la qualité de l'air autour de vous.",
+      "button": "Contactez Nous"
+
+    },
+    "mobile": {
+      "title": "Application Mobile",
+      "text": "Une application mobile révolutionnaire, à portée de main",
+      "by": "Par",
+      "description": "Soyez parmi les premiers à découvrir l'application CLADIAQ. Téléchargez dès maintenant et transformez votre bien-être quotidien.",
+      "button": "Téléchargez"
+
+    }
+  }
+}
