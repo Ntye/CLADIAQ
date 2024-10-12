@@ -17,7 +17,7 @@ function App() {
 
   const [content, setContent] = useState(null); // Store the fetched JSON data
   const { language } = useParams();
-  const [activeTab, setActiveTab] = useState('home');
+  const [activeTab, setActiveTab] = useState('indoor');
 
   useEffect(() => {
     // Fetch language JSON data based on the current param
@@ -44,7 +44,8 @@ function App() {
       {/*<DefaultNavbar activeTab={activeTab} setActiveTab={setActiveTab}/>*/}
 
       <section id="home" className="section">
-        <DefaultCarousel/>
+        {/*<DefaultCarousel/>*/}
+        <LandingCarousel/>
       </section>
 
       <section id="mission" className="section">

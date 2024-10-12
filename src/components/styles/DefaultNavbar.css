@@ -49,4 +49,7 @@
     .nav {
         padding: var(--side-mobile-spacing) var(--side-mobile-spacing);
     }
+    .nav-logo {
+        width: 50px;
+    }
 }

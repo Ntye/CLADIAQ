@@ -1,12 +1,15 @@
 .team-card {
     margin-right: 6.25rem;
+    background-color: white;
+    border-radius: 0 0 0.625rem .625rem;
+    /*height: 4.375rem;*/
 }
 
 .team-member-description {
-    height: 4.375rem;
-    background-color: white;
+    height: 2.5rem;
+    /*background-color: white;*/
     padding-top: 1rem;
-    border-radius: 0 0 0.625rem .625rem;
+    /*border-radius: 0 0 0.625rem .625rem;*/
 }
 
 .team-image {
@@ -23,6 +26,7 @@
 
 .member-post {
     font-size: 1rem;
+    padding-left: 1.25rem;
 }
 
 .team-social-link {
