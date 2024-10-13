@@ -4,6 +4,8 @@ import React, {useEffect, useState} from "react";
 import Icon from "../assets/Faq/Icon.svg";
 import Title from "../utilities/Title.jsx";
 import Image from "../assets/Faq/Image.svg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import {useNavigate, useParams} from "react-router-dom";
 
 function Faq() {
@@ -19,6 +21,12 @@ function Faq() {
   };
 
   useEffect(() => {
+    // Initialize AOS animations on component mount
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      once: false,    // Animate more than once when scrolling
+    });
+
     // Fetch language JSON data based on the current param
     const fetchLanguage = async () => {
       const response = await fetch('/faq.json');
@@ -49,10 +57,11 @@ function Faq() {
           alt="faq"
           src={Image}
           className="faq-image"
+          data-aos="fade-right"
         />
         <div className="faq-left">
 
-          <div className="faq-container">
+          <div data-aos="fade-left" className="faq-container">
             {faqArray.map((faq, index) => (
               <FAQItem
                 key={index}

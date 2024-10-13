@@ -49,32 +49,34 @@ function Contact() {
       <div className="contact spacing">
 
         <div className="contact-text">
-          <h3 className="contact-title lato-extra-bold">
+          <h3 data-aos="fade-right" className="contact-title lato-extra-bold">
             {content.subtitle}
           </h3>
 
-          <p className="lato-regular primary-gray contact-subtitle">
+          <p data-aos="fade-right" className="lato-regular primary-gray contact-subtitle">
             {content.text}
           </p>
 
-          <p className="lato-regular primary-gray contact-detail">
+          <p data-aos="fade-right" className="lato-regular primary-gray contact-detail">
             {content.email.title}
           </p>
-          <p>
+          <p data-aos="fade-right">
             <Link to="mailto:cladiaq24@gmail.com" className="contact-link">
               {content.email.content}
             </Link>
           </p>
           <br/>
 
-          <p className="lato-regular primary-gray contact-detail">
+          <p data-aos="fade-right" className="lato-regular primary-gray contact-detail">
             {content.phone.title}
           </p>
-          <p>
+          <p data-aos="fade-right">
             {content.phone.content}
           </p>
         </div>
-        <ContactForm/>
+        <div data-aos="fade-left">
+          <ContactForm/>
+        </div>
       </div>
 
     </div>
