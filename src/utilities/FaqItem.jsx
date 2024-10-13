@@ -5,7 +5,7 @@ import './styles/FaqItem.css';
 
 function FAQItem({ faq, index, toggleFAQ, activeIndex }) {
   return (
-    <div className="faq-item">
+    <div className={"faq-item"}>
       <div
         className={`faq-question ${activeIndex === index ? 'active' : ''} poppins-medium`}
         onClick={() => toggleFAQ(index)}>

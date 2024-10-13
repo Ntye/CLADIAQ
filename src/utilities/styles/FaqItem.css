@@ -1,6 +1,8 @@
 .faq-item {
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
+
+    /*padding-bottom: 2rem;*/
 }
 
 .faq-item:last-child {
@@ -10,21 +12,26 @@
 .faq-question {
     display: flex;
     justify-content: space-between;
-    font-size: 1.125rem;
+    font-size: 1.1rem;
     cursor: pointer;
     color: var(--dark-gray);
-    padding-bottom: 2rem;
+    padding-left: 1rem;
+    /*margin-bottom: 10px;*/
+    border-left: 3px solid var(--dark-gray);
+    border-radius: 3px;
 }
 
 .faq-question.active {
     padding-bottom: 0;
     color: var(--primary-blue);
+    border-left: 3px solid var(--primary-blue);
 }
 
 .faq-answer {
     color: #555;
-    animation: fadeIn 0.3s ease-in-out;
-    font-size: 1.125rem;
+    animation: fadeIn 2s ease-in-out;
+    font-size: 15px;
+    /*width: 600px;*/
     padding-top: 1.25rem;
     padding-bottom: 1.875rem;
 }

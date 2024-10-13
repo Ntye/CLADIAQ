@@ -1,22 +1,53 @@
 .faq {
-    padding-left: 15.625rem;
+    justify-content: space-between;
     padding-bottom: 3.125rem;
-}
-
-.faq-image {
-    padding-right: 11.25rem;
+    display: flex;
+    flex-direction: row;
 }
 
 .faq-container {
-    padding: 1rem 1.25rem 0 1.25rem;
-    max-width: 600px;
-    margin: 0 auto;
+    padding: 20px;
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 35vw;
 }
 
 .faq-title {
     font-size: 2.25rem;
     margin-bottom: 1.25rem;
+}
+
+@media (max-width: 1400px) {
+    .faq-image {
+        width: 30vw;
+    }
+
+    .faq-container {
+        width: 60vw;
+    }
+}
+
+/* Styles for phones */
+@media (max-width: 750px) {
+    .faq-image {
+        width: 60vw;
+        margin-bottom: 2rem;
+    }
+
+    .faq {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faq-container {
+        width: 85vw;
+    }
+
+    /*.team-images {*/
+    /*    flex-direction: column;*/
+    /*    */
+    /*    margin-bottom: 0;*/
+    /*}*/
 }

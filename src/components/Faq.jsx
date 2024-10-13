@@ -44,14 +44,13 @@ function Faq() {
         imgSrc={Icon}
         section="FAQ Question"
       />
-      <div className="faq d-flex flex-row">
+      <div className="faq spacing">
         <img
           alt="faq"
           src={Image}
           className="faq-image"
         />
         <div className="faq-left">
-          <h3 className="poppins-semibold faq-title">Frequently asked questions</h3>
 
           <div className="faq-container">
             {faqArray.map((faq, index) => (
