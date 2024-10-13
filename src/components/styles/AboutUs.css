@@ -61,10 +61,23 @@
 @media (max-width: 750px) {
     .about-us {
         justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
 
     .about-us-text {
         width: 400px;
+        justify-content: center;
+        align-items: center;
     }
+
+    .about-us-title-h3 {
+        font-size: 2rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .about-us-subtitle {
+        font-size: 15px;
+    }
+
 }
