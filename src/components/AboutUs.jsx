@@ -48,7 +48,7 @@ function AboutUs() {
         className="about-title"
       />
 
-      <div className="about-us ">
+      <div className="about-us spacing">
         <img
           className="element about-image"
           src={illustration}
@@ -80,7 +80,7 @@ function AboutUs() {
         </div>
       </div>
 
-      <div className="about-us  mt-5">
+      <div className="about-us spacing mt-5">
 
         <div className="about-us-text">
           <h3 data-aos="fade-right" className="about-us-title-h3 poppins-semibold">
@@ -108,7 +108,7 @@ function AboutUs() {
 
       </div>
 
-      <div className="about-us   mt-5">
+      <div className="about-us spacing  mt-5">
         <img
           className="element about-image"
           src={outdoor}

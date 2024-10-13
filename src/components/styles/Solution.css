@@ -1,7 +1,3 @@
-.about-us {
-    padding: 0 var(--side-web-spacing);
-}
-
 .tabs-navigation {
     display: flex;
     border-bottom: 2px solid #ddd;
