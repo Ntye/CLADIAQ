@@ -9,7 +9,7 @@ const TeamMember = ({ name, post, imgSrc, facebookLink, twitterLink, linkedInLin
   return (
     <div className="team-card">
       <img src={imgSrc} className="team-image" alt="team-image"/>
-      <div className="d-flex flex-row justify-content-between team-member-description">
+      <div className="team-member-description">
         <div className="team-member">
           <h3 className="member-name raleway-bold">{name}</h3>
         </div>
