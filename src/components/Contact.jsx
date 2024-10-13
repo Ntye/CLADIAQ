@@ -3,9 +3,10 @@ import ContactForm from "../utilities/ContactForm.jsx";
 import Icon from "../assets/Icon.svg";
 import Title from "../utilities/Title.jsx";
 import React, {useEffect, useState} from "react";
-import {useNavigate, useParams} from "react-router-dom";
+import {Link, useNavigate, useParams} from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import LinkedIn from "../assets/Footer/LinkedIn.svg";
 
 function Contact() {
 
@@ -60,7 +61,9 @@ function Contact() {
             {content.email.title}
           </p>
           <p>
-            {content.email.content}
+            <Link to="mailto:cladiaq24@gmail.com" className="contact-link">
+              {content.email.content}
+            </Link>
           </p>
           <br/>
 

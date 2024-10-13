@@ -16,6 +16,11 @@
     padding-bottom: 10rem;
 }
 
+.contact-link {
+    text-decoration: none;
+    color: black;
+}
+
 
 @media (max-width: 1400px) {
 }
