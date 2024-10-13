@@ -45,9 +45,9 @@ function Contact() {
         className="about-title"
       />
 
-      <div className="contact d-flex flex-row">
+      <div className="contact spacing">
 
-        <div>
+        <div className="contact-text">
           <h3 className="contact-title lato-extra-bold">
             {content.subtitle}
           </h3>
