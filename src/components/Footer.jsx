@@ -4,7 +4,6 @@ import {Link} from "react-router-dom";
 import Facebook from "../assets/Footer/Facebook.svg"
 import Instagram from "../assets/Footer/Instagram.svg"
 import LinkedIn from "../assets/Footer/LinkedIn.svg"
-import Twitter from "../assets/Footer/Twitter.svg"
 
 const Footer = () => {
   return (
@@ -60,7 +59,6 @@ const Footer = () => {
 
           </div>
         </div>
-
       </div>
 
       <div className="footer-bottom">
