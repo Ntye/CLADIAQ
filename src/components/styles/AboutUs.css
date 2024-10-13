@@ -1,14 +1,12 @@
-.about-title {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
 .about-us {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 50px;
+}
 
+.about-title {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .about-image {
@@ -21,14 +19,12 @@
 }
 
 .about-us-title-h3 {
-    /*font-size: 2.875rem;*/
     font-size: 2rem;
     margin-bottom: 1.875rem;
 }
 
 .about-us-subtitle {
-    /*font-size: 1.25rem;*/
-    font-size: 1em;
+    font-size: 1rem;
     color: var(--dark-gray);
     margin-bottom: 1.875rem;
 }
@@ -39,9 +35,7 @@
     border-color: var(--primary-blue);
     margin-right: 1.25rem;
     width: 13.125rem;
-    /*height: 3.125rem;*/
     height: 3rem;
-    /*font-size: 1.125rem;*/
     font-size: 1rem;
 
 }
@@ -53,7 +47,6 @@
 
 .learn-button {
     width: 12.5rem;
-    /*height: 3.75rem;*/
     height: 3rem;
     color: var(--primary-white);
     font-size: 1rem;
@@ -62,4 +55,29 @@
     border: none;
     box-shadow: 0 12px 30px rgba(24, 92, 255, 0.18);
     transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Styles for phones */
+@media (max-width: 750px) {
+    .about-us {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about-us-text {
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-us-title-h3 {
+        font-size: 2rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .about-us-subtitle {
+        font-size: 15px;
+    }
+
 }
