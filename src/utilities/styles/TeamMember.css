@@ -1,19 +1,21 @@
 .team-card {
+    width: 235px;
     margin-right: 6.25rem;
     background-color: white;
     border-radius: 0 0 0.625rem .625rem;
-    /*height: 4.375rem;*/
 }
 
 .team-member-description {
     height: 2.5rem;
-    /*background-color: white;*/
     padding-top: 1rem;
-    /*border-radius: 0 0 0.625rem .625rem;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .team-image {
-    height: 18rem;
+    width: 235px;
+    height: 288px;
 }
 
 .team-member {
@@ -31,4 +33,23 @@
 
 .team-social-link {
     padding-right: 0.625rem;
+}
+
+
+@media (max-width: 1400px) {
+    .team-card {
+        margin-right: 0.8rem;
+    }
+}
+
+/* Styles for phones */
+@media (max-width: 750px) {
+    .team-card {
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+
+    .team-image {
+        height: auto;
+    }
 }

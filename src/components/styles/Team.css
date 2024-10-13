@@ -1,8 +1,9 @@
 .team {
-    /*padding-left: var(--side-spacing);*/
-    padding: 0 200px;
+    display: flex;
+    flex-direction: row;
     margin-top: -20px;
 }
+
 .team-title {
     display: flex;
     flex-direction: row;
@@ -20,9 +21,33 @@
 }
 
 .team-images {
+    display: flex;
+    flex-direction: row;
     margin-bottom: 2.5rem;
 }
 
 .team-illustration {
     width: 40rem;
+}
+
+@media (max-width: 1400px) {
+    .team {
+        flex-direction: column;
+    }
+}
+
+/* Styles for phones */
+@media (max-width: 750px) {
+    .team {
+        flex-direction: column;
+    }
+
+    .team-images {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+
 }

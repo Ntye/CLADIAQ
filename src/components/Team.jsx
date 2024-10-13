@@ -52,9 +52,9 @@ function Team() {
         section="Our Team"
       />
 
-      <div className="team d-flex flex-row">
+      <div className="team spacing">
         <div>
-          <div data-aos="fade-right" className="team-images d-flex flex-row">
+          <div data-aos="fade-right" className="team-images">
             <TeamMember
               name={content.member_1.name}
               post={content.member_1.post}
@@ -85,7 +85,7 @@ function Team() {
             />
           </div>
 
-          <div data-aos="fade-left" className="team-images d-flex flex-row">
+          <div data-aos="fade-left" className="team-images">
             <TeamMember
               name={content.member_4.name}
               post={content.member_4.post}
