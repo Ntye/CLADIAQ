@@ -3,16 +3,14 @@ import ContactForm from "../utilities/ContactForm.jsx";
 import Icon from "../assets/Icon.svg";
 import Title from "../utilities/Title.jsx";
 import React, {useEffect, useState} from "react";
-import {Link, useNavigate, useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import LinkedIn from "../assets/Footer/LinkedIn.svg";
 
 function Contact() {
 
   const [content, setContent] = useState(null);
   const { language } = useParams();
-  const navigate = useNavigate();
 
   useEffect(() => {
     // Fetch language JSON data based on the current param
@@ -28,11 +26,6 @@ function Contact() {
     });
     fetchLanguage();
   }, [language]);
-
-  const handleLanguageChange = (e) => {
-    const selectedLanguage = e.target.value === '1' ? 'fr' : 'en';
-    navigate(`/${selectedLanguage}`);
-  };
 
   if (!content) {
     return <div>Loading...</div>;

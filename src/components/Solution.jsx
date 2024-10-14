@@ -7,7 +7,7 @@ import {Button, Col, FloatingLabel, Form} from "react-bootstrap";
 import Title from "../utilities/Title.jsx";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import {useNavigate, useParams} from "react-router-dom";
+import { useParams} from "react-router-dom";
 
 function Solution({ activeTab, setActiveTab }) {
 
@@ -15,7 +15,6 @@ function Solution({ activeTab, setActiveTab }) {
   const [outdoorQty, setOutdoorQty] = useState(1);
   const [content, setContent] = useState(null);
   const { language } = useParams();
-  const navigate = useNavigate();
 
   const handleSubmitIn = (e) => {
     e.preventDefault();
@@ -49,11 +48,6 @@ function Solution({ activeTab, setActiveTab }) {
     };
     fetchLanguage();
   }, [language]);
-
-  const handleLanguageChange = (e) => {
-    const selectedLanguage = e.target.value === '1' ? 'fr' : 'en';
-    navigate(`/${selectedLanguage}`);
-  };
 
   if (!content) {
     return <div>Loading...</div>;

@@ -8,13 +8,12 @@ import 'aos/dist/aos.css';
 import React, {useEffect, useState} from "react";
 import indoor from "../assets/Description/indoor.svg"
 import outdoor from "../assets/Description/outdoor.svg"
-import {useNavigate, useParams} from "react-router-dom";
+import { useParams} from "react-router-dom";
 
 function AboutUs() {
 
   const [content, setContent] = useState(null);
   const { language } = useParams();
-  const navigate = useNavigate();
 
   useEffect(() => {
     // Fetch language JSON data based on the current param
@@ -30,11 +29,6 @@ function AboutUs() {
     });
     fetchLanguage();
   }, [language]);
-
-  const handleLanguageChange = (e) => {
-    const selectedLanguage = e.target.value === '1' ? 'fr' : 'en';
-    navigate(`/${selectedLanguage}`);
-  };
 
   if (!content) {
     return <div>Loading...</div>;

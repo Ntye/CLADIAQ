@@ -1,11 +1,29 @@
 import "./styles/Footer.css"
 import Logo from "../assets/Footer/Logo.svg"
-import {Link} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import Facebook from "../assets/Footer/Facebook.svg"
 import Instagram from "../assets/Footer/Instagram.svg"
 import LinkedIn from "../assets/Footer/LinkedIn.svg"
+import React, {useEffect, useState} from "react";
 
 const Footer = () => {
+  const [content, setContent] = useState(null);
+  const { language } = useParams();
+
+  useEffect(() => {
+    // Fetch language JSON data based on the current param
+    const fetchLanguage = async () => {
+      const response = await fetch("/footer.json");
+      const data = await response.json();
+      setContent(data[language]);
+    };
+    fetchLanguage();
+  }, [language]);
+
+  if (!content) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <footer className="footer spacing">
       <div className="footer-top justify-content-between d-flex flex-row">
@@ -18,23 +36,23 @@ const Footer = () => {
         <div className="footer-text">
           <div className="footer-top-right">
             <div className="footer-section">
-              <h3 className="footer-section-title lato-bold">About</h3>
-              <a href="#home" className="footer-section-link raleway-regular">Home</a> <br/>
-              <a href="#mission" className="footer-section-link raleway-regular">About Us</a> <br/>
-              <a href="#indoor" className="footer-section-link raleway-regular">Solutions</a> <br/>
+              <h3 className="footer-section-title lato-bold">{content.about.title}</h3>
+              <a href="#home" className="footer-section-link raleway-regular">{content.about.one}</a> <br/>
+              <a href="#about" className="footer-section-link raleway-regular">{content.about.two}</a> <br/>
+              <a href="#indoor" className="footer-section-link raleway-regular">{content.about.three}</a> <br/>
             </div>
 
             <div className="footer-section">
-              <h3 className="footer-section-title lato-bold">Information</h3>
-              <a href="#contact" className="footer-section-link raleway-regular">Contacts</a> <br/>
-              <a href="#team" className="footer-section-link raleway-regular">Our Team</a> <br/>
-              <a href="#faq" className="footer-section-link raleway-regular">FAQ</a> <br/>
+              <h3 className="footer-section-title lato-bold">{content.information.title}</h3>
+              <a href="#contact" className="footer-section-link raleway-regular">{content.information.one}</a> <br/>
+              <a href="#team" className="footer-section-link raleway-regular">{content.information.two}</a> <br/>
+              <a href="#faq" className="footer-section-link raleway-regular">{content.information.three}</a> <br/>
             </div>
           </div>
 
           <div>
             <h3 className="footer-section-title lato-bold">
-              Socials
+              {content.socials}
             </h3>
             <div className="d-flex flex-row">
               <Link to="mailto:cladiaq05@gmail.com" className="footer-social-link">
@@ -62,8 +80,8 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>Privacy policy &nbsp;&nbsp; | &nbsp;&nbsp; Terms of use</p>
-        <p>&copy; 2024 CLADIAQ. All Rights Reserved.</p>
+        <p>{content.terms.left_one} &nbsp;&nbsp; | &nbsp;&nbsp; {content.terms.left_two}</p>
+        <p>&copy; {content.terms.copy}</p>
       </div>
     </footer>
   );

@@ -6,13 +6,12 @@ import Title from "../utilities/Title.jsx";
 import Image from "../assets/Faq/Image.svg";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import {useNavigate, useParams} from "react-router-dom";
+import { useParams} from "react-router-dom";
 
 function Faq() {
   const [activeIndex, setActiveIndex] = useState(null);
   const [content, setContent] = useState(null);
   const { language } = useParams();
-  const navigate = useNavigate();
 
   const faqArray = content ? Object.keys(content).map((key) => content[key]) : [];
 
@@ -36,11 +35,6 @@ function Faq() {
     };
     fetchLanguage();
   }, [language]);
-
-  const handleLanguageChange = (e) => {
-    const selectedLanguage = e.target.value === '1' ? 'fr' : 'en';
-    navigate(`/${selectedLanguage}`);
-  };
 
   if (!content) {
     return <div>Loading...</div>;
