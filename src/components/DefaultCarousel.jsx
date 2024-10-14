@@ -4,9 +4,6 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 import "./styles/DefaultCarousel.css"
 import { Autoplay } from 'swiper/modules';
-import VerticalSlide from "../utilities/VerticalSlide.jsx";
-
-import img1 from "../assets/Carousel/Slide_1.png"
 
 const DefaultCarousel = () => {
   return (

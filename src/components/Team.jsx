@@ -1,5 +1,5 @@
 import Icon from "../assets/Icon.svg";
-import Harold from "../assets/Team/Harold.svg"
+import Harold from "../assets/Team/Harold.png"
 import Nina from "../assets/Team/Nina.png"
 import Nathanael from "../assets/Team/Nathanael.png"
 import Donald from "../assets/Team/Donald.png"

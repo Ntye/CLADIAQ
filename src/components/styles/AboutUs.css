@@ -63,10 +63,15 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        width: 80vw;
+    }
+
+    .about-image {
+        width: 80vw;
     }
 
     .about-us-text {
-        width: 400px;
+        width: 80vw;
         justify-content: center;
         align-items: center;
     }
