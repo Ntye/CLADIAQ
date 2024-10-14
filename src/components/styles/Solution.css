@@ -129,19 +129,19 @@
     }
 
     .product-image {
-        width: 200px;
+        width: 80vw;
     }
 
     .product-text {
         padding: 0 15px;
-        width: 100vw;
+        width: 80vw;
     }
 
     .product-title {
         font-size: 1.3rem;
         padding-top: 2rem;
         padding-bottom: 1rem;
-        width: 450px;
+        width: 80vw;
     }
 
     .product-subtitle {
@@ -151,7 +151,7 @@
     .product-description {
         padding-bottom: 1rem;
         font-size: 15px;
-        width: 90vw;
+        width: 80vw;
     }
 }
 
