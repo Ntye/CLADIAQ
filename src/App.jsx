@@ -39,23 +39,25 @@ function App() {
 
   return (
     <>
-      <DefaultNavbar activeTab={activeTab} setActiveTab={setActiveTab}/>
+    <DefaultNavbar activeTab={activeTab} setActiveTab={setActiveTab}/>
 
-      <section id="home" className="section">
-        {/*<DefaultCarousel/>*/}
-        <LandingCarousel/>
+    <section id="home" className="section">
+      {/*<DefaultCarousel/>*/}
+      <LandingCarousel/>
+    </section>
+
+    <section id="about" className="section">
+      <section id="mission" className="section">
+        <AboutUs/>
       </section>
+    </section>
 
-      <section id="about" className="section">
-        <section id="mission" className="section">
-          <AboutUs/>
-        </section>
-      </section>
-
-      <section id="mobileApp" className="section">
-        <section id="indoor" className="section">
-          <section id="outdoor" className="section">
-            <Solution activeTab={activeTab} setActiveTab={setActiveTab}/>
+      <section id="solution" className="section">
+        <section id="mobileApp" className="section">
+          <section id="indoor" className="section">
+            <section id="outdoor" className="section">
+              <Solution activeTab={activeTab} setActiveTab={setActiveTab}/>
+            </section>
           </section>
         </section>
       </section>

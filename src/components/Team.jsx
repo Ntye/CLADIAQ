@@ -1,10 +1,10 @@
 import Icon from "../assets/Icon.svg";
 import Harold from "../assets/Team/Harold.svg"
-import Nina from "../assets/Team/Nina.svg"
-import Nathanael from "../assets/Team/Nathanael.svg"
-import Donald from "../assets/Team/Donald.svg"
+import Nina from "../assets/Team/Nina.png"
+import Nathanael from "../assets/Team/Nathanael.png"
+import Donald from "../assets/Team/Donald.png"
 import Estelle from "../assets/Team/Estelle.svg"
-import Wilfred from "../assets/Team/Wilfred.svg"
+import Wilfred from "../assets/Team/Wilfred.png"
 import HighFive from "../assets/Team/HighFive.svg"
 import "./styles/Team.css"
 import TeamMember from "../utilities/TeamMember.jsx";
