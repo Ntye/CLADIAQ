@@ -1,6 +1,6 @@
 import "./styles/Footer.css"
 import Logo from "../assets/Footer/Logo.svg"
-import {Link, useNavigate, useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import Facebook from "../assets/Footer/Facebook.svg"
 import Instagram from "../assets/Footer/Instagram.svg"
 import LinkedIn from "../assets/Footer/LinkedIn.svg"
@@ -9,7 +9,6 @@ import React, {useEffect, useState} from "react";
 const Footer = () => {
   const [content, setContent] = useState(null);
   const { language } = useParams();
-  const navigate = useNavigate();
 
   useEffect(() => {
     // Fetch language JSON data based on the current param
@@ -20,11 +19,6 @@ const Footer = () => {
     };
     fetchLanguage();
   }, [language]);
-
-  const handleLanguageChange = (e) => {
-    const selectedLanguage = e.target.value === "1" ? "fr" : "en";
-    navigate(`/${selectedLanguage}`);
-  };
 
   if (!content) {
     return <div>Loading...</div>;
