@@ -1,7 +1,6 @@
 import AboutUs from "./components/AboutUs.jsx";
 import React, {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
-import NavbarDefault from "./components/NavbarDefault.jsx";
 import LandingCarousel from "./components/LandingCarousel.jsx";
 import Faq from "./components/Faq.jsx";
 import Footer from "./components/Footer.jsx";
@@ -40,16 +39,17 @@ function App() {
 
   return (
     <>
-      <NavbarDefault activeTab={activeTab} setActiveTab={setActiveTab}/>
-      {/*<DefaultNavbar activeTab={activeTab} setActiveTab={setActiveTab}/>*/}
+      <DefaultNavbar activeTab={activeTab} setActiveTab={setActiveTab}/>
 
       <section id="home" className="section">
         {/*<DefaultCarousel/>*/}
         <LandingCarousel/>
       </section>
 
-      <section id="mission" className="section">
-        <AboutUs/>
+      <section id="about" className="section">
+        <section id="mission" className="section">
+          <AboutUs/>
+        </section>
       </section>
 
       <section id="mobileApp" className="section">

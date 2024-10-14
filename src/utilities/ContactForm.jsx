@@ -19,7 +19,6 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log(formData);
   };
 
@@ -28,7 +27,9 @@ function ContactForm() {
       <form className="contact-form" onSubmit={handleSubmit}>
         <h2 className="lato-extra-bold contact-us-title">Contact Us</h2>
 
-        <label htmlFor="name" className="contact-form-label lato-semibold">Name</label>
+        <label htmlFor="name" className="contact-form-label lato-semibold">
+          Name
+        </label>
         <input
           type="text"
           id="name"
@@ -39,7 +40,9 @@ function ContactForm() {
           required
         />
 
-        <label htmlFor="email" className="contact-form-label lato-semibold">Email</label>
+        <label htmlFor="email" className="contact-form-label lato-semibold">
+          Email
+        </label>
         <input
           type="email"
           id="email"
@@ -50,7 +53,9 @@ function ContactForm() {
           required
         />
 
-        <label htmlFor="theme" className="contact-form-label lato-semibold">Theme</label>
+        <label htmlFor="theme" className="contact-form-label lato-semibold">
+          Theme
+        </label>
         <input
           type="text"
           id="theme"
@@ -61,7 +66,9 @@ function ContactForm() {
           required
         />
 
-        <label htmlFor="message" className="contact-form-label lato-semibold">Message</label>
+        <label htmlFor="message" className="contact-form-label lato-semibold">
+          Message
+        </label>
         <textarea
           id="message"
           name="message"

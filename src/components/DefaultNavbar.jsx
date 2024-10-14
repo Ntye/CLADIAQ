@@ -1,48 +1,44 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import {Form, Modal} from "react-bootstrap";
 import Logo from "../assets/Navbar/Logo.svg";
 import LogoD from "../assets/Navbar/WhiteLogo.svg";
-import Menu from "../assets/Navbar/menu.svg"
+import Menu from "../assets/Navbar/Burger_menu.png"
 import "../index.css";
 import "./styles/DefaultNavbar.css";
-import { BiWorld} from "react-icons/bi";
+import { BiWorld } from "react-icons/bi";
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
-function DefaultNavbar({activeTab, setActiveTab}) {
+function DefaultNavbar({ activeTab, setActiveTab }) {
   const [content, setContent] = useState(null);
-  const [show, setShow] = useState(false);
   const { language } = useParams();
   const navigate = useNavigate();
-
   const [scrolled, setScrolled] = useState(false);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight) {
+      if (window.scrollY > window.innerHeight - 100) {
         setScrolled(true);
       } else {
         setScrolled(false);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const handleTabClick = (tab) => {
-    setActiveTab(tab); // Set the active tab when a service is clicked
-  };
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   useEffect(() => {
     // Fetch language JSON data based on the current param
     const fetchLanguage = async () => {
-      const response = await fetch('/navbar.json');
+      const response = await fetch("/navbar.json");
       const data = await response.json();
       setContent(data[language]);
     };
@@ -50,8 +46,12 @@ function DefaultNavbar({activeTab, setActiveTab}) {
   }, [language]);
 
   const handleLanguageChange = (e) => {
-    const selectedLanguage = e.target.value === '1' ? 'fr' : 'en';
+    const selectedLanguage = e.target.value === "1" ? "fr" : "en";
     navigate(`/${selectedLanguage}`);
+  };
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
   };
 
   if (!content) {
@@ -59,113 +59,130 @@ function DefaultNavbar({activeTab, setActiveTab}) {
   }
 
   return (
-    <div className="nav">
-      {/*Logo*/}
-      <a href="#home">
-        <img
-          src={`${scrolled ? Logo : LogoD}`}
-          alt="Logo"
-          className="nav-logo"
-        />
-      </a>
-
-      <div className="links">
-        <a href="#home" className={`nav-link poppins-semibold ${scrolled ? 'primary-blue-logo' : 'primary-white'} ${activeTab === '#about-us' ? 'link-active' : ''} ${scrolled ? 'primary-blue-logo' : 'primary-white'}`}>
-          {content.home.title}
-        </a>
-
-        {/* Dropdown for About */}
-        <div className="dropdown">
-          <a href="#about-us" className={`dropbtn poppins-semibold ${scrolled ? 'primary-blue-logo' : 'primary-white'}`}>
-            {content.about.title}
+    <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
+      <div className="navbar-container">
+        <div className="navbar-logo">
+          <a href="#home">
+            <img src={`${scrolled ? Logo : LogoD}`} alt="Logo" className="nav-logo" />
           </a>
-          <div className="dropdown-content">
-            <a href="#mission" className="dropdown-item  raleway-regular">{content.about.subsections.mission}</a>
-            <a href="#team" className="dropdown-item raleway-regular">{content.about.subsections.team}</a>
-            <a href="#faq" className="dropdown-item raleway-regular">{content.about.subsections.faq}</a>
-          </div>
         </div>
-
-        {/* Dropdown for Solutions */}
-        <div className="dropdown">
-          <a href="#solution" className={`dropbtn poppins-semibold ${scrolled ? 'primary-blue-logo' : 'primary-white'}`}>
-            {content.solutions.title}
-          </a>
-          <div className="dropdown-content">
-            <a href="#indoor" className="dropdown-item raleway-regular">{content.solutions.subsections.indoor}</a>
-            <a href="#outdoor" className="dropdown-item raleway-regular">{content.solutions.subsections.outdoor}</a>
-            <a href="#mobileApp"
-               className="dropdown-item raleway-regular">{content.solutions.subsections.mobile_app}</a>
-            {/*<a href="#ai" className="dropdown-item raleway-regular">{content.solutions.subsections.ai}</a>*/}
-            <a href="#dataCollection"
-               className="dropdown-item raleway-regular">{content.solutions.subsections.data_collection}</a>
-          </div>
-        </div>
-
-        {/* Dropdown for Impact */}
-        <div className="dropdown">
-          <a href="#impact" className={`dropbtn poppins-semibold ${scrolled ? 'primary-blue-logo' : 'primary-white'}`}>
-            {content.impact.title}
-          </a>
-          <div className="dropdown-content">
-            <a href="#environmental"
-               className="dropdown-item raleway-regular">{content.impact.subsections.environmental}</a>
-            <a href="#healthTips"
-               className="dropdown-item raleway-regular">{content.impact.subsections.health_tips}</a>
-            <a href="#techAndEnvironment"
-               className="dropdown-item raleway-regular">{content.impact.subsections.tech_and_environment}</a>
-          </div>
-        </div>
-
-        <a href="#contact" className={`nav-link poppins-semibold ${scrolled ? 'primary-blue-logo' : 'primary-white'} ${activeTab === '#contact' ? 'link-active' : ''} ${scrolled ? 'primary-blue-logo' : 'primary-white'}`}>{content.contact.title}</a>
-
-      </div>
-      <div className="d-flex flex-row">
-        <BiWorld className={`lang-icon ${scrolled ? 'primary-blue-logo' : 'primary-white'}`}/>
-
-        <Form.Select
-          className={`nav-lang ${scrolled ? 'primary-blue-logo' : 'primary-white'}`}
-          onChange={handleLanguageChange} value={language === 'fr' ? '1' : '0'}
-        >
-          <option value="0">English</option>
-          <option value="1">Français</option>
-        </Form.Select>
-      </div>
-
-
-      <div className="mobile-links">
-        <img src={Menu} alt="menu" onClick={handleShow}/>
-
-        <Modal show={show} fullscreen={true} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>
-              <img src={Logo} alt="Logo" className="nav-logo"/>
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            Modal body content
-
-            <a href="#home" className="nav-link">{content.home.title}</a>
-            <a href="#about" className="nav-link">{content.about.title}</a>
-            <a href="#solution" className="nav-link">{content.solutions.title}</a>
-            <a href="#impact" className="nav-link">{content.impact.title}</a>
-            <a href="#contact" className="nav-link">{content.contact.title}</a>
-
-            <div className="d-flex flex-row">
-              <BiWorld className="lang-icon"/>
-
-              <Form.Select className="nav-lang" onChange={handleLanguageChange} value={language === 'fr' ? '1' : '0'}>
-                <option value="0">English</option>
-                <option value="1">Français</option>
-              </Form.Select>
+        <div className="navbar-links">
+          <div className={`navbar-links-block poppins-semibold ${scrolled ? "active" : ""}`}>
+            <a href="#home" className={`nav-link ${scrolled ? "active" : ""}`}>
+              {content.home.title}
+            </a>
+            <div className="dropdown">
+              <a href="#about" className={`nav-link ${scrolled ? "active" : ""}`}>{content.about.title}</a>
+              <div className="dropdown-content">
+                <a href="#mission" className="dropdown-item">{content.about.subsections.mission}</a>
+                <a href="#team" className="dropdown-item">{content.about.subsections.team}</a>
+                <a href="#faq" className="dropdown-item">{content.about.subsections.faq}</a>
+              </div>
             </div>
-          </Modal.Body>
-        </Modal>
 
+            <div className="dropdown">
+              <a href="#solution" className={`nav-link ${scrolled ? "active" : ""}`}>{content.solutions.title}</a>
+              <div className="dropdown-content">
+                <a href="#indoor" className="dropdown-item" onClick={() => handleTabClick('indoor')}>
+                  {content.solutions.subsections.indoor}
+                </a>
+                <a href="#outdoor" className="dropdown-item" onClick={() => handleTabClick('outdoor')}>
+                  {content.solutions.subsections.outdoor}
+                </a>
+                <a href="#mobileApp" className="dropdown-item" onClick={() => handleTabClick('mobileApp')}>
+                  {content.solutions.subsections.mobile_app}
+                </a>
+                </div>
+            </div>
+
+            <a href="#contact" className={`nav-link ${scrolled ? "active" : ""}`}>
+              {content.contact.title}
+            </a>
+          </div>
+
+          <div className="lang-select">
+            <BiWorld className={`lang-icon ${scrolled ? "active" : ""}`}/>
+            <select className={`nav-lang ${scrolled ? "active" : ""}  poppins-semibold`} onChange={handleLanguageChange} value={language === "fr" ? "1" : "0"}>
+              <option value="0">English</option>
+              <option value="1">Français</option>
+            </select>
+          </div>
+        </div>
       </div>
-    </div>
-  );
+
+        <div className="navbar-container-mobile">
+          <div className="navbar-logo">
+            <a href="#home">
+              <img src={Logo} alt="Logo" className="nav-logo"/>
+            </a>
+          </div>
+
+          <div>
+            <Button variant="primary" onClick={handleShow} className="menu">
+              <img src={Menu} alt="menu"/>
+            </Button>
+            <Offcanvas show={show} onHide={handleClose} scroll={true}>
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title>
+                  <div className="navbar-logo">
+                    <a href="#home">
+                      <img src={Logo} alt="Logo" className="nav-logo-mobile"/>
+                    </a>
+                  </div>
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+
+                <div className="navbar-links-mobile">
+                  <div className={`navbar-links-block-mobile poppins-semibold ${scrolled ? "active" : ""}`}>
+                    <a href="#home" className={`nav-link ${scrolled ? "active" : ""}`}>
+                      {content.home.title}
+                    </a>
+                    <div className="dropdown">
+                      <a href="#about" className={`nav-link ${scrolled ? "active" : ""}`}>{content.about.title}</a>
+                      <div className="dropdown-content">
+                        <a href="#mission" className="dropdown-item">{content.about.subsections.mission}</a>
+                        <a href="#team" className="dropdown-item">{content.about.subsections.team}</a>
+                        <a href="#faq" className="dropdown-item">{content.about.subsections.faq}</a>
+                      </div>
+                    </div>
+
+                    <div className="dropdown">
+                      <a href="#solution" className={`nav-link ${scrolled ? "active" : ""}`}>{content.solutions.title}</a>
+                      <div className="dropdown-content">
+                        <a href="#indoor" className="dropdown-item" onClick={() => handleTabClick('indoor')}>
+                          {content.solutions.subsections.indoor}
+                        </a>
+                        <a href="#outdoor" className="dropdown-item" onClick={() => handleTabClick('outdoor')}>
+                          {content.solutions.subsections.outdoor}
+                        </a>
+                        <a href="#mobileApp" className="dropdown-item" onClick={() => handleTabClick('mobileApp')}>
+                          {content.solutions.subsections.mobile_app}
+                        </a>
+                      </div>
+                    </div>
+
+                    <a href="#contact" className={`nav-link ${scrolled ? "active" : ""}`}>
+                      {content.contact.title}
+                    </a>
+                  </div>
+
+                  <div className="lang-select">
+                    <BiWorld className={`lang-icon ${scrolled ? "active" : ""}`}/>
+                    <select className={`nav-lang ${scrolled ? "active" : ""}  poppins-semibold`}
+                            onChange={handleLanguageChange} value={language === "fr" ? "1" : "0"}>
+                      <option value="0">English</option>
+                      <option value="1">Français</option>
+                    </select>
+                  </div>
+                </div>
+              </Offcanvas.Body>
+            </Offcanvas>
+          </div>
+
+        </div>
+    </nav>
+);
 }
 
 export default DefaultNavbar;
-

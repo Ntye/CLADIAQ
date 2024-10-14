@@ -1,5 +1,6 @@
 .contact {
-    padding: 6.25rem 15.625rem 6.25rem 15.625rem;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -13,4 +14,37 @@
     width: 37.5rem;
     font-size: 1rem;
     padding-bottom: 10rem;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: black;
+}
+
+
+@media (max-width: 1400px) {
+}
+
+/* Styles for phones */
+@media (max-width: 1400px) {
+    .contact {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-text {
+        padding-bottom: 3rem;
+    }
+
+    .contact-title {
+        width: 80vw;
+        font-size: 1.3rem;
+    }
+
+    .contact-subtitle {
+        width: 80vw;
+        font-size: 15px;
+        padding-bottom: 1.3rem;
+    }
 }
