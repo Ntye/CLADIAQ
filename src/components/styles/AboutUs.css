@@ -64,6 +64,7 @@
         align-items: center;
         flex-direction: column;
         width: 80vw;
+        margin-left: 5px;
     }
 
     .about-image {
