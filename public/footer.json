@@ -1,0 +1,43 @@
+{
+  "en": {
+    "about": {
+      "title": "About",
+      "one": "Home",
+      "two": "About Us",
+      "three": "Solution"
+    },
+    "information": {
+      "title": "Information",
+      "one": "Contacts",
+      "two": "Our Team",
+      "three": "FAQ"
+    },
+    "socials": "Socials",
+    "terms": {
+      "left_one": "Privacy policy",
+      "left_two": "Terms of use",
+      "copy": "2024 CLADIAQ. All Rights Reserved."
+    }
+  },
+
+  "fr": {
+    "about": {
+      "title": "À propos",
+      "one": "Accueil",
+      "two": "À propos",
+      "three": "Solution"
+    },
+    "information": {
+      "title": "Informations",
+      "one": "Contact",
+      "two": "Notre équipe",
+      "three": "FAQ"
+    },
+    "socials": "Réseaux sociaux",
+    "terms": {
+      "left_one": "Politique de confidentialité",
+      "left_two": "Conditions d'utilisation",
+      "copy": "2024 CLADIAQ. Tous droits réservés."
+    }
+  }
+}
