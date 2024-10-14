@@ -64,7 +64,7 @@
         align-items: center;
         flex-direction: column;
         width: 80vw;
-        margin-left: 5px;
+        /*margin-left: 5px;*/
     }
 
     .about-image {
@@ -79,10 +79,12 @@
 
     .about-us-title-h3 {
         font-size: 2rem;
+        width: 80vw;
         margin-bottom: 1.3rem;
     }
 
     .about-us-subtitle {
+        width: 80vw;
         font-size: 15px;
     }
 
