@@ -46,8 +46,10 @@ function App() {
         <LandingCarousel/>
       </section>
 
-      <section id="mission" className="section">
-        <AboutUs/>
+      <section id="about" className="section">
+        <section id="mission" className="section">
+          <AboutUs/>
+        </section>
       </section>
 
       <section id="mobileApp" className="section">
