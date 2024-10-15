@@ -41,39 +41,39 @@ function App() {
     <>
     <DefaultNavbar activeTab={activeTab} setActiveTab={setActiveTab}/>
 
-    <section id="home" className="section">
+    {/*<section id="home" className="section">*/}
       {/*<DefaultCarousel/>*/}
-      <LandingCarousel/>
-    </section>
+      {/*<LandingCarousel/>*/}
+    {/*</section>*/}
 
-    <section id="about" className="section">
-      <section id="mission" className="section">
-        <AboutUs/>
-      </section>
-    </section>
+    {/*<section id="about" className="section">*/}
+    {/*  <section id="mission" className="section">*/}
+    {/*    <AboutUs/>*/}
+    {/*  </section>*/}
+    {/*</section>*/}
 
-      <section id="solution" className="section">
-        <section id="mobileApp" className="section">
-          <section id="indoor" className="section">
-            <section id="outdoor" className="section">
-              <Solution activeTab={activeTab} setActiveTab={setActiveTab}/>
-            </section>
-          </section>
-        </section>
-      </section>
+    {/*  <section id="solution" className="section">*/}
+    {/*    <section id="mobileApp" className="section">*/}
+    {/*      <section id="indoor" className="section">*/}
+    {/*        <section id="outdoor" className="section">*/}
+    {/*          <Solution activeTab={activeTab} setActiveTab={setActiveTab}/>*/}
+    {/*        </section>*/}
+    {/*      </section>*/}
+    {/*    </section>*/}
+    {/*  </section>*/}
 
 
-      <section id="team" className="section">
-        <Team/>
-      </section>
+    {/*  <section id="team" className="section">*/}
+    {/*    <Team/>*/}
+    {/*  </section>*/}
 
-      <section id="faq" className="section">
-        <Faq/>
-      </section>
+    {/*  <section id="faq" className="section">*/}
+    {/*    <Faq/>*/}
+    {/*  </section>*/}
 
-      <section id="contact" className="section">
-        <Contact/>
-      </section>
+    {/*  <section id="contact" className="section">*/}
+    {/*    <Contact/>*/}
+    {/*  </section>*/}
 
       <Footer/>
     </>
