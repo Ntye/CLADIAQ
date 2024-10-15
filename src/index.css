@@ -1,6 +1,7 @@
 body {
   background-color: #F1F6FA;
   width: 100%;
+  overflow-x: hidden;
 }
 
 :root {
