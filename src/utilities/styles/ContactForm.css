@@ -45,3 +45,9 @@
     border-radius: 0.625rem;
     margin-left: 13.125rem;
 }
+
+@media (max-width: 1400px) {
+    .contact-form {
+        width: 80vw;
+    }
+}
