@@ -1,3 +1,7 @@
+.solution {
+    width: 100%;
+}
+
 .tabs-navigation {
     display: flex;
     border-bottom: 2px solid #ddd;

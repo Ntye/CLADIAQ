@@ -54,7 +54,7 @@ function Solution({ activeTab, setActiveTab }) {
   }
 
   return (
-    <div className="spacing">
+    <div className="solution spacing">
       <Title
         imgSrc={Icon}
         section="Solution"
