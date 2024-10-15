@@ -50,4 +50,8 @@
     .contact-form {
         width: 80vw;
     }
+
+    .contact-form-button {
+        margin-left: 0;
+    }
 }
