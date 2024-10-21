@@ -110,11 +110,11 @@ function Team() {
             />
           </div>
         </div>
-        <img
-          alt="high-five"
-          src={HighFive}
-          className="element team-ilustration"
-        />
+        {/*<img*/}
+        {/*  alt="high-five"*/}
+        {/*  src={HighFive}*/}
+        {/*  className="element team-ilustration"*/}
+        {/*/>*/}
       </div>
 
     </div>
