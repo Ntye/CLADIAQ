@@ -110,7 +110,6 @@ function Team() {
             />
           </div>
         </div>
-
         <img
           alt="high-five"
           src={HighFive}
