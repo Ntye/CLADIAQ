@@ -1,58 +1,63 @@
-.team {
-    display: flex;
-    flex-direction: row;
-    margin-top: -20px;
-}
+/*.team {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    margin-top: -20px;*/
+/*}*/
 
-.team-title {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    padding-left: 60.3125rem;
-    padding-top: 3.125rem;
-    padding-bottom: 3.125rem;
-}
+/*.team-memebers {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
 
-.team-title-text {
-    padding-top: 1rem;
-    padding-left: 2.5rem;
-    font-size: 1.625rem;
-}
+/*.team-title {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    text-align: center;*/
+/*    align-items: center;*/
+/*    padding-left: 60.3125rem;*/
+/*    padding-top: 3.125rem;*/
+/*    padding-bottom: 3.125rem;*/
+/*}*/
 
-.team-images {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 2.5rem;
-}
+/*.team-title-text {*/
+/*    padding-top: 1rem;*/
+/*    padding-left: 2.5rem;*/
+/*    font-size: 1.625rem;*/
+/*}*/
 
-.team-illustration {
-    width: 70vw;
-}
+/*.team-images {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    margin-bottom: 2.5rem;*/
+/*}*/
 
-@media (max-width: 1400px) {
-    .team-images {
-        justify-content: center;
-        align-items: center;
-    }
+/*.team-illustration {*/
+/*    width: 70vw;*/
+/*}*/
 
-    .team {
-        flex-direction: column;
-    }
-}
+/*@media (max-width: 1400px) {*/
+/*    .team-images {*/
+/*        justify-content: center;*/
+/*        align-items: center;*/
+/*    }*/
 
-/* Styles for phones */
-@media (max-width: 750px) {
-    .team {
-        flex-direction: column;
-    }
+/*    .team {*/
+/*        flex-direction: column;*/
+/*    }*/
+/*}*/
 
-    .team-images {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 0;
-    }
+/*!* Styles for phones *!*/
+/*@media (max-width: 750px) {*/
+/*    .team {*/
+/*        flex-direction: column;*/
+/*    }*/
+
+/*    .team-images {*/
+/*        flex-direction: column;*/
+/*        justify-content: center;*/
+/*        align-items: center;*/
+/*        margin-bottom: 0;*/
+/*    }*/
 
 
-}
+/*}*/
