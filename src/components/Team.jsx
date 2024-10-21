@@ -49,25 +49,25 @@ function Team() {
       <div className="team">
         <div className="team-members">
           <div data-aos="fade-right" className="team-images">
-            {/*<TeamMember*/}
-            {/*  name={content.member_1.name}*/}
-            {/*  post={content.member_1.post}*/}
-            {/*  imgSrc={Harold}*/}
-            {/*  className="team-member"*/}
-            {/*  facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"*/}
-            {/*  twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"*/}
-            {/*  linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"*/}
-            {/*/>*/}
+            <TeamMember
+              name={content.member_1.name}
+              post={content.member_1.post}
+              imgSrc={Harold}
+              className="team-member"
+              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+            />
 
-            {/*<TeamMember*/}
-            {/*  name={content.member_2.name}*/}
-            {/*  post={content.member_2.post}*/}
-            {/*  imgSrc={Nina}*/}
-            {/*  className="team-member"*/}
-            {/*  facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"*/}
-            {/*  twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"*/}
-            {/*  linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"*/}
-            {/*/>*/}
+            <TeamMember
+              name={content.member_2.name}
+              post={content.member_2.post}
+              imgSrc={Nina}
+              className="team-member"
+              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+            />
 
             <TeamMember
               name={content.member_3.name}
