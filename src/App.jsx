@@ -67,13 +67,13 @@ function App() {
     {/*    <Team/>*/}
     {/*  </section>*/}
 
-    {/*  <section id="faq" className="section">*/}
-    {/*    <Faq/>*/}
-    {/*  </section>*/}
-
-      <section id="contact" className="section">
-        <Contact/>
+      <section id="faq" className="section">
+        <Faq/>
       </section>
+
+      {/*<section id="contact" className="section">*/}
+      {/*  <Contact/>*/}
+      {/*</section>*/}
 
       <Footer/>
     </>
