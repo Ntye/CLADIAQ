@@ -63,9 +63,9 @@ function App() {
     {/*  </section>*/}
 
 
-    {/*  <section id="team" className="section">*/}
-    {/*    <Team/>*/}
-    {/*  </section>*/}
+      <section id="team" className="section">
+        <Team/>
+      </section>
 
       <section id="faq" className="section">
         <Faq/>
