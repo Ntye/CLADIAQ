@@ -77,6 +77,8 @@
 
 .team-images {
     margin-bottom: 2.5rem;
+    flex-direction: column;
+    display: flex;
 }
 
 .team-illustration {
