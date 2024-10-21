@@ -47,7 +47,7 @@ function Team() {
       />
 
       <div className="team spacing">
-        <div className="team-memebers">
+        <div className="team-members">
           <div data-aos="fade-right" className="team-images">
             <TeamMember
               name={content.member_1.name}
