@@ -46,7 +46,7 @@ function Team() {
         section="Our Team"
       />
 
-      <div className="team spacing">
+      <div className="team ">
         <div className="team-members">
           <div data-aos="fade-right" className="team-images">
             <TeamMember
