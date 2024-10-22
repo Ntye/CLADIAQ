@@ -1,95 +1,65 @@
-/*.team {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    margin-top: -20px;*/
-/*}*/
-
-/*.team-memebers {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*}*/
-
-/*.team-title {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    text-align: center;*/
-/*    align-items: center;*/
-/*    padding-left: 60.3125rem;*/
-/*    padding-top: 3.125rem;*/
-/*    padding-bottom: 3.125rem;*/
-/*}*/
-
-/*.team-title-text {*/
-/*    padding-top: 1rem;*/
-/*    padding-left: 2.5rem;*/
-/*    font-size: 1.625rem;*/
-/*}*/
-
-/*.team-images {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    margin-bottom: 2.5rem;*/
-/*}*/
-
-/*.team-illustration {*/
-/*    width: 70vw;*/
-/*}*/
-
-/*@media (max-width: 1400px) {*/
-/*    .team-images {*/
-/*        justify-content: center;*/
-/*        align-items: center;*/
-/*    }*/
-
-/*    .team {*/
-/*        flex-direction: column;*/
-/*    }*/
-/*}*/
-
-/*!* Styles for phones *!*/
-/*@media (max-width: 750px) {*/
-/*    .team {*/
-/*        flex-direction: column;*/
-/*    }*/
-
-/*    .team-images {*/
-/*        flex-direction: column;*/
-/*        justify-content: center;*/
-/*        align-items: center;*/
-/*        margin-bottom: 0;*/
-/*    }*/
-
-
-/*}*/
-
-
 .team {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: -20px;
 }
 
 .team-members {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+.team-title {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding-left: 60.3125rem;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+}
+
+.team-title-text {
+    padding-top: 1rem;
+    padding-left: 2.5rem;
+    font-size: 1.625rem;
 }
 
 .team-images {
-    margin-bottom: 2.5rem;
-    flex-direction: column;
     display: flex;
+    flex-direction: row;
+    margin-bottom: 2.5rem;
 }
 
 .team-illustration {
     width: 70vw;
 }
 
-/* Styles for larger tablets and desktops */
-@media (min-width: 750px) {
+@media (max-width: 1400px) {
+    .team-images {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team {
+        flex-direction: column;
+    }
 }
 
-@media (min-width: 1440px) {
+/* Styles for phones */
+@media (max-width: 750px) {
+    .team {
+        flex-direction: column;
+    }
+
+    .team-images {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+
 }
 
 
