@@ -46,7 +46,7 @@ function Team() {
         section="Our Team"
       />
 
-      <div className="team">
+      <div className="team spacing">
         <div className="team-members">
           <TeamMember
             name={content.member_1.name}
