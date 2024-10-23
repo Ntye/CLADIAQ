@@ -63,13 +63,19 @@ function AboutUs() {
           {/*</p>*/}
 
           <div data-aos="fade-left" className="d-flex flex-row">
-            <Button className="lato-bold about-us-button">
-              {content.about_us.buttons.one}
-            </Button>
+            <a href="#indoor">
+              <Button className="lato-bold about-us-button">
+                {content.about_us.buttons.one}
+              </Button>
+            </a>
 
-            <Button className="lato-bold about-us-button">
-              {content.about_us.buttons.two}
-            </Button>
+
+            <a href="#team">
+              <Button className="lato-bold about-us-button">
+                {content.about_us.buttons.two}
+              </Button>
+            </a>
+
           </div>
         </div>
       </div>
@@ -87,9 +93,12 @@ function AboutUs() {
 
 
           <div data-aos="fade-right" className="d-flex flex-row">
-            <Button className="lato-bold learn-button">
-              {content.indoor.buttons}
-            </Button>
+            <a href="#faq">
+              <Button className="lato-bold learn-button">
+                {content.indoor.buttons}
+              </Button>
+            </a>
+
           </div>
 
         </div>
@@ -119,11 +128,11 @@ function AboutUs() {
           </p>
 
           <div data-aos="fade-left" className="d-flex flex-row">
-
-            <Button className="lato-bold about-us-button">
-              {content.outdoor.buttons}
-            </Button>
-
+            <a href="#faq">
+              <Button className="lato-bold about-us-button">
+                {content.outdoor.buttons}
+              </Button>
+            </a>
           </div>
         </div>
       </div>
