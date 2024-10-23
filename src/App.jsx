@@ -47,11 +47,17 @@ function App() {
       {/*<LandingCarousel/>*/}
       {/*</section>*/}
 
-      {/*<section id="about" className="section">*/}
-      {/*  <section id="mission" className="section">*/}
-      {/*    <AboutUs/>*/}
-      {/*  </section>*/}
-      {/*</section>*/}
+      <section id="about" className="section">
+        <section id="mission" className="section">
+          <AboutUs/>
+        </section>
+      </section>
+
+      <section id="about-mobile" className="section-mobile">
+        <section id="mission-mobile" className="section-mobile">
+          <AboutUs/>
+        </section>
+      </section>
 
       <section id="solution" className="section">
         <section id="mobileApp" className="section">
