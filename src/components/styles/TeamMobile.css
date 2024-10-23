@@ -4,6 +4,7 @@
     margin-top: -20px;
     justify-content: center;
     margin-left: 20vw;
+    overflow: hidden;
 }
 
 .team-card {
