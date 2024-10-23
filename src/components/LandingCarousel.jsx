@@ -30,7 +30,7 @@ function LandingCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
 
-      <Carousel.Item interval={500}>
+      <Carousel.Item interval={3000}>
         <img
           src={Slide_2}
           alt="Second slide"
@@ -48,7 +48,7 @@ function LandingCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
 
-      <Carousel.Item interval={500}>
+      <Carousel.Item interval={3000}>
         <img
           src={Slide_3}
           alt="Third slide"
@@ -67,7 +67,7 @@ function LandingCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
 
-      <Carousel.Item interval={500}>
+      <Carousel.Item interval={3000}>
         <img
           src={Slide_4}
           alt="Fourth slide"
