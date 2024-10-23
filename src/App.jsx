@@ -22,15 +22,17 @@ function App() {
   useEffect(() => {
     // Fetch language JSON data based on the current param
     const fetchLanguage = async () => {
-      const response = await fetch('/language.json');
+      const response = await fetch("/home.json");
       const data = await response.json();
-
-      setContent(data);
-      console.log(data)
-
+      setContent(data[language]);
     };
     fetchLanguage();
   }, [language]);
+
+  const handleLanguageChange = (e) => {
+    const selectedLanguage = e.target.value === "1" ? "fr" : "en";
+    navigate(`/${selectedLanguage}`);
+  };
 
 
   if (!content) {
@@ -54,12 +56,22 @@ function App() {
             alt="home-img"
             className="home-img element"
           />
+
+          <h3 data-aos="fade-left" className="about-us-title-h3 poppins-semibold">
+            {content.title}
+          </h3>
+
+          <p data-aos="fade-left" className="about-us-subtitle raleway-regular">
+            {content.description}
+          </p>
+
+
         </div>
       </section>
 
       <section id="about" className="section">
-      <section id="mission" className="section">
-        <AboutUs/>
+        <section id="mission" className="section">
+          <AboutUs/>
       </section>
     </section>
 
