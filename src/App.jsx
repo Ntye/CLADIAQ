@@ -10,6 +10,7 @@ import Solution from "./components/Solution.jsx";
 import Team from "./components/Team.jsx";
 import Contact from "./components/Contact.jsx";
 import Feature from "./components/Feature.jsx";
+import TeamMobile from "./components/TeamMobile.jsx";
 
 
 function App() {
@@ -39,32 +40,36 @@ function App() {
 
   return (
     <>
-    <DefaultNavbar activeTab={activeTab} setActiveTab={setActiveTab}/>
+      <DefaultNavbar activeTab={activeTab} setActiveTab={setActiveTab}/>
 
-    {/*<section id="home" className="section">*/}
+      {/*<section id="home" className="section">*/}
       {/*<DefaultCarousel/>*/}
       {/*<LandingCarousel/>*/}
-    {/*</section>*/}
+      {/*</section>*/}
 
-    {/*<section id="about" className="section">*/}
-    {/*  <section id="mission" className="section">*/}
-    {/*    <AboutUs/>*/}
-    {/*  </section>*/}
-    {/*</section>*/}
+      {/*<section id="about" className="section">*/}
+      {/*  <section id="mission" className="section">*/}
+      {/*    <AboutUs/>*/}
+      {/*  </section>*/}
+      {/*</section>*/}
 
-    {/*  <section id="solution" className="section">*/}
-    {/*    <section id="mobileApp" className="section">*/}
-    {/*      <section id="indoor" className="section">*/}
-    {/*        <section id="outdoor" className="section">*/}
-    {/*          <Solution activeTab={activeTab} setActiveTab={setActiveTab}/>*/}
-    {/*        </section>*/}
-    {/*      </section>*/}
-    {/*    </section>*/}
-    {/*  </section>*/}
+      {/*  <section id="solution" className="section">*/}
+      {/*    <section id="mobileApp" className="section">*/}
+      {/*      <section id="indoor" className="section">*/}
+      {/*        <section id="outdoor" className="section">*/}
+      {/*          <Solution activeTab={activeTab} setActiveTab={setActiveTab}/>*/}
+      {/*        </section>*/}
+      {/*      </section>*/}
+      {/*    </section>*/}
+      {/*  </section>*/}
 
 
       <section id="team" className="section">
         <Team/>
+      </section>
+
+      <section id="team" className="section-mobile">
+        <TeamMobile/>
       </section>
 
       <section id="faq" className="section">

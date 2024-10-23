@@ -48,7 +48,6 @@ function Team() {
 
       <div className="team">
         <div className="team-members">
-          <div data-aos="fade-right" className="team-images">
             <TeamMember
               name={content.member_1.name}
               post={content.member_1.post}
@@ -77,9 +76,7 @@ function Team() {
               twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
               linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
             />
-          </div>
 
-          <div data-aos="fade-left" className="team-images">
             <TeamMember
               name={content.member_4.name}
               post={content.member_4.post}
@@ -109,7 +106,6 @@ function Team() {
               linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
             />
           </div>
-        </div>
         <img
           alt="high-five"
           src={HighFive}
