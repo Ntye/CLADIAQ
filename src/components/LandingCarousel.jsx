@@ -50,25 +50,6 @@ function LandingCarousel() {
 
       <Carousel.Item interval={3000}>
         <img
-          src={Slide_3}
-          alt="Third slide"
-          className="carousel-image"
-        />
-        <Carousel.Caption className="custom-caption">
-          <h3 className=" element poppins-bold carousel-title">
-            Your haven of peace, <br/>
-            our expertise
-          </h3>
-          <p className="poppins-semibold carousel-description">
-            Building your haven of peace is our passion. <br/>
-            Entrust us with your project and we&lsquo;ll <br/>
-            transform your space into a true sanctuary.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-
-      <Carousel.Item interval={3000}>
-        <img
           src={Slide_4}
           alt="Fourth slide"
           className="carousel-image"
