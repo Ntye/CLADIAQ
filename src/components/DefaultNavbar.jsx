@@ -112,7 +112,7 @@ function DefaultNavbar({ activeTab, setActiveTab }) {
 
         <div className="navbar-container-mobile">
           <div className="navbar-logo">
-            <a href="#home">
+            <a href="#home-mobile">
               <img src={Logo} alt="Logo" className="nav-logo"/>
             </a>
           </div>
@@ -125,7 +125,7 @@ function DefaultNavbar({ activeTab, setActiveTab }) {
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title>
                   <div className="navbar-logo">
-                    <a href="#home">
+                    <a href="#home-mobile">
                       <img src={Logo} alt="Logo" className="nav-logo-mobile"/>
                     </a>
                   </div>
@@ -135,25 +135,25 @@ function DefaultNavbar({ activeTab, setActiveTab }) {
 
                 <div className="navbar-links-mobile">
                   <div className={`navbar-links-block-mobile poppins-semibold ${scrolled ? "active" : ""}`}>
-                    <a href="#home" className={`nav-link ${scrolled ? "active" : ""}`}>
+                    <a href="#home-mobile" className={`nav-link ${scrolled ? "active" : ""}`}>
                       {content.home.title}
                     </a>
                     <div className="dropdown">
-                      <a href="#about" className={`nav-link ${scrolled ? "active" : ""}`}>{content.about.title}</a>
+                      <a href="#about-mobile" className={`nav-link ${scrolled ? "active" : ""}`}>{content.about.title}</a>
                       <div className="dropdown-content">
-                        <a href="#mission" className="dropdown-item">{content.about.subsections.mission}</a>
-                        <a href="#team" className="dropdown-item">{content.about.subsections.team}</a>
-                        <a href="#faq" className="dropdown-item">{content.about.subsections.faq}</a>
+                        <a href="#mission-mobile" className="dropdown-item">{content.about.subsections.mission}</a>
+                        <a href="#team-mobile" className="dropdown-item">{content.about.subsections.team}</a>
+                        <a href="#faq-mobile" className="dropdown-item">{content.about.subsections.faq}</a>
                       </div>
                     </div>
 
                     <div className="dropdown">
-                      <a href="#solution" className={`nav-link ${scrolled ? "active" : ""}`}>{content.solutions.title}</a>
+                      <a href="#solution-mobile" className={`nav-link ${scrolled ? "active" : ""}`}>{content.solutions.title}</a>
                       <div className="dropdown-content">
-                        <a href="#indoor" className="dropdown-item" onClick={() => handleTabClick('indoor')}>
+                        <a href="#indoor-mobile" className="dropdown-item" onClick={() => handleTabClick('indoor')}>
                           {content.solutions.subsections.indoor}
                         </a>
-                        <a href="#outdoor" className="dropdown-item" onClick={() => handleTabClick('outdoor')}>
+                        <a href="#outdoor-mobile" className="dropdown-item" onClick={() => handleTabClick('outdoor')}>
                           {content.solutions.subsections.outdoor}
                         </a>
                         <a href="#mobileApp" className="dropdown-item" onClick={() => handleTabClick('mobileApp')}>
@@ -162,7 +162,7 @@ function DefaultNavbar({ activeTab, setActiveTab }) {
                       </div>
                     </div>
 
-                    <a href="#contact" className={`nav-link ${scrolled ? "active" : ""}`}>
+                    <a href="#contact-mobile" className={`nav-link ${scrolled ? "active" : ""}`}>
                       {content.contact.title}
                     </a>
                   </div>

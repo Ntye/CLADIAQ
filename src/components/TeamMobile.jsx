@@ -6,7 +6,7 @@ import Donald from "../assets/Team/Donald.png"
 import Estelle from "../assets/Team/Estelle.png"
 import Wilfred from "../assets/Team/Wilfred.png"
 import HighFive from "../assets/Team/HighFive.svg"
-import "./styles/Team.css"
+import "./styles/TeamMobile.css"
 import TeamMember from "../utilities/TeamMember.jsx";
 import Title from "../utilities/Title.jsx";
 import React, {useEffect, useState} from "react";
@@ -14,7 +14,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useParams} from "react-router-dom";
 
-function Team() {
+function TeamMobile() {
 
   const [content, setContent] = useState(null);
   const { language } = useParams();
@@ -46,8 +46,8 @@ function Team() {
         section="Our Team"
       />
 
-      <div className="team spacing">
-        <div className="team-members">
+      <div className="team spacing justify-content-center">
+        <div data-aos="fade-right" className=" team-members">
           <TeamMember
             name={content.member_1.name}
             post={content.member_1.post}
@@ -112,4 +112,4 @@ function Team() {
   );
 }
 
-export default Team;
+export default TeamMobile;
