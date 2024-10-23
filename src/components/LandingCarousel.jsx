@@ -37,7 +37,7 @@ function LandingCarousel() {
           className="carousel-image"
         />
         <Carousel.Caption className="custom-caption">
-          <h3 className="poppins-bold carousel-title">
+          <h3 className=" element poppins-bold carousel-title">
             Your space at <br/>
             your fingertips
           </h3>
@@ -55,7 +55,7 @@ function LandingCarousel() {
           className="carousel-image"
         />
         <Carousel.Caption className="custom-caption">
-          <h3 className="poppins-bold carousel-title">
+          <h3 className=" element poppins-bold carousel-title">
             Your haven of peace, <br/>
             our expertise
           </h3>
@@ -74,7 +74,7 @@ function LandingCarousel() {
           className="carousel-image"
         />
         <Carousel.Caption className="custom-caption">
-          <h3 className="poppins-bold carousel-title">
+          <h3 className="element  poppins-bold carousel-title">
             From start to finish, <br/>
             we&lsquo;re with you every <br/>
             step of the way <br/>
