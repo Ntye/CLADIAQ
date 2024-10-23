@@ -12,7 +12,10 @@ import Title from "../utilities/Title.jsx";
 import React, {useEffect, useState} from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
+import Facebook from "../assets/Team/Facebook.svg";
+import Twitter from "../assets/Team/Twitter.svg";
+import LinkedIn from "../assets/Team/LinkedIn.svg";
 
 function TeamMobile() {
 
@@ -47,74 +50,156 @@ function TeamMobile() {
       />
 
       <div className="team spacing justify-content-center">
-        <div className=" team-members">
-          <div  data-aos="fade-right">
-            <TeamMember
-              name={content.member_1.name}
-              post={content.member_1.post}
-              imgSrc={Harold}
-              className="team-member"
-              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-            />
-
-            <TeamMember
-              name={content.member_2.name}
-              post={content.member_2.post}
-              imgSrc={Nina}
-              className="team-member"
-              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-            />
-
-            <TeamMember
-              name={content.member_3.name}
-              post={content.member_3.post}
-              imgSrc={Nathanael}
-              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-            />
+        <div data-aos="fade-left" className="team-card">
+          <img src={Harold} className="team-image" alt="team-image"/>
+          <div className="team-member-description">
+            <div className="team-member">
+              <h3 className="member-name raleway-bold">{content.member_1.name}</h3>
+            </div>
+            <div className="team-socials">
+              <Link to="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+                    className="team-social-link">
+                <img src={Facebook} alt="facebook"/>
+              </Link>
+              <Link to="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+                    className="team-social-link">
+                <img src={Twitter} alt="twitter"/>
+              </Link>
+              <Link to="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+                    className="team-social-link">
+                <img src={LinkedIn} alt="linkedIn"/>
+              </Link>
+            </div>
           </div>
-
-
-          <div  data-aos="fade-left">
-            <TeamMember
-              name={content.member_4.name}
-              post={content.member_4.post}
-              imgSrc={Donald}
-              className="team-member"
-              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-            />
-
-            <TeamMember
-              name={content.member_5.name}
-              post={content.member_5.post}
-              imgSrc={Estelle}
-              className="team-member"
-              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-            />
-
-            <TeamMember
-              name={content.member_6.name}
-              post={content.member_6.post}
-              imgSrc={Wilfred}
-              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-            />
-          </div>
+          <p className="member-post lato-regular primary-gray">{content.member_1.post}</p>
         </div>
+
+
+        <div data-aos="fade-left" className="team-card">
+          <img src={Nina} className="team-image" alt="team-image"/>
+          <div className="team-member-description">
+            <div className="team-member">
+              <h3 className="member-name raleway-bold">{content.member_2.name}</h3>
+            </div>
+            <div className="team-socials">
+              <Link to="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+                    className="team-social-link">
+                <img src={Facebook} alt="facebook"/>
+              </Link>
+              <Link to="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+                    className="team-social-link">
+                <img src={Twitter} alt="twitter"/>
+              </Link>
+              <Link to="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+                    className="team-social-link">
+                <img src={LinkedIn} alt="linkedIn"/>
+              </Link>
+            </div>
+          </div>
+          <p className="member-post lato-regular primary-gray">{content.member_2.post}</p>
+        </div>
+
+        <div data-aos="fade-left" className="team-card">
+          <img src={Nathanael} className="team-image" alt="team-image"/>
+          <div className="team-member-description">
+            <div className="team-member">
+              <h3 className="member-name raleway-bold">{content.member_3.name}</h3>
+            </div>
+            <div className="team-socials">
+              <Link to="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+                    className="team-social-link">
+                <img src={Facebook} alt="facebook"/>
+              </Link>
+              <Link to="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+                    className="team-social-link">
+                <img src={Twitter} alt="twitter"/>
+              </Link>
+              <Link to="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+                    className="team-social-link">
+                <img src={LinkedIn} alt="linkedIn"/>
+              </Link>
+            </div>
+          </div>
+          <p className="member-post lato-regular primary-gray">{content.member_3.post}</p>
+        </div>
+
+        <div data-aos="fade-rightt" className="team-card">
+          <img src={Wilfred} className="team-image" alt="team-image"/>
+          <div className="team-member-description">
+            <div className="team-member">
+              <h3 className="member-name raleway-bold">{content.member_4.name}</h3>
+            </div>
+            <div className="team-socials">
+              <Link to="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+                    className="team-social-link">
+                <img src={Facebook} alt="facebook"/>
+              </Link>
+              <Link to="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+                    className="team-social-link">
+                <img src={Twitter} alt="twitter"/>
+              </Link>
+              <Link to="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+                    className="team-social-link">
+                <img src={LinkedIn} alt="linkedIn"/>
+              </Link>
+            </div>
+          </div>
+          <p className="member-post lato-regular primary-gray">{content.member_4.post}</p>
+        </div>
+
+        <div data-aos="fade-rightt" className="team-card">
+          <img src={Estelle} className="team-image" alt="team-image"/>
+          <div className="team-member-description">
+            <div className="team-member">
+              <h3 className="member-name raleway-bold">{content.member_5.name}</h3>
+            </div>
+            <div className="team-socials">
+              <Link to="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+                    className="team-social-link">
+                <img src={Facebook} alt="facebook"/>
+              </Link>
+              <Link to="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+                    className="team-social-link">
+                <img src={Twitter} alt="twitter"/>
+              </Link>
+              <Link to="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+                    className="team-social-link">
+                <img src={LinkedIn} alt="linkedIn"/>
+              </Link>
+            </div>
+          </div>
+          <p className="member-post lato-regular primary-gray">{content.member_5.post}</p>
+        </div>
+
+        <div data-aos="fade-rightt" className="team-card">
+          <img src={Donald} className="team-image" alt="team-image"/>
+          <div className="team-member-description">
+            <div className="team-member">
+              <h3 className="member-name raleway-bold">{content.member_6.name}</h3>
+            </div>
+            <div className="team-socials">
+              <Link to="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+                    className="team-social-link">
+                <img src={Facebook} alt="facebook"/>
+              </Link>
+              <Link to="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+                    className="team-social-link">
+                <img src={Twitter} alt="twitter"/>
+              </Link>
+              <Link to="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+                    className="team-social-link">
+                <img src={LinkedIn} alt="linkedIn"/>
+              </Link>
+            </div>
+          </div>
+          <p className="member-post lato-regular primary-gray">{content.member_6.post}</p>
+        </div>
+
       </div>
 
     </div>
-  );
+  )
+    ;
 }
 
 export default TeamMobile;

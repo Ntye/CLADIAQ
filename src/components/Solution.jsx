@@ -1,8 +1,8 @@
 import React, { useState, useEffect} from 'react';
 import "./styles/Solution.css";
 import Icon from "../assets/Icon.svg";
-import Indoor from "../assets/Products/Indoor.svg";
-import Outdoor from "../assets/Products/Outdoor.svg"
+import Indoor from "../assets/Products/Inddor.png";
+import Outdoor from "../assets/Products/Outdoor.png"
 import {Button, Col, FloatingLabel, Form} from "react-bootstrap";
 import Title from "../utilities/Title.jsx";
 import AOS from 'aos';

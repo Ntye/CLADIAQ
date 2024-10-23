@@ -5,6 +5,7 @@ import LandingCarousel from "./components/LandingCarousel.jsx";
 import Faq from "./components/Faq.jsx";
 import Footer from "./components/Footer.jsx";
 import DefaultCarousel from "./components/DefaultCarousel.jsx";
+import Home from "../src/assets/Carousel/hime.png"
 import DefaultNavbar from "./components/DefaultNavbar.jsx";
 import Solution from "./components/Solution.jsx";
 import Team from "./components/Team.jsx";
@@ -42,10 +43,14 @@ function App() {
     <>
       <DefaultNavbar activeTab={activeTab} setActiveTab={setActiveTab}/>
 
-      {/*<section id="home" className="section">*/}
-      {/*<DefaultCarousel/>*/}
-      {/*<LandingCarousel/>*/}
-      {/*</section>*/}
+      <section id="home" className="section">
+        <LandingCarousel/>
+      </section>
+
+      <section id="home" className="section-mobile">
+        <img src={Home} alt="landing"
+        />
+      </section>
 
       {/*<section id="about" className="section">*/}
       {/*  <section id="mission" className="section">*/}
