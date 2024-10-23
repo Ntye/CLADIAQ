@@ -148,12 +148,12 @@ function DefaultNavbar({ activeTab, setActiveTab }) {
                     </div>
 
                     <div className="dropdown">
-                      <a href="#solution-mobile" className={`nav-link ${scrolled ? "active" : ""}`}>{content.solutions.title}</a>
+                      <a href="#solution" className={`nav-link ${scrolled ? "active" : ""}`}>{content.solutions.title}</a>
                       <div className="dropdown-content">
-                        <a href="#indoor-mobile" className="dropdown-item" onClick={() => handleTabClick('indoor')}>
+                        <a href="#indoor" className="dropdown-item" onClick={() => handleTabClick('indoor')}>
                           {content.solutions.subsections.indoor}
                         </a>
-                        <a href="#outdoor-mobile" className="dropdown-item" onClick={() => handleTabClick('outdoor')}>
+                        <a href="#outdoor" className="dropdown-item" onClick={() => handleTabClick('outdoor')}>
                           {content.solutions.subsections.outdoor}
                         </a>
                         <a href="#mobileApp" className="dropdown-item" onClick={() => handleTabClick('mobileApp')}>
