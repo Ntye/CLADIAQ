@@ -70,10 +70,10 @@ function App() {
       </section>
 
 
-      <section id="solution-mobile" className="section-mobile">
-        <section id="mobileApp-mobile" className="section-mobile">
-          <section id="indoor-mobile" className="section-mobile">
-            <section id="outdoor-mobile" className="section-mobile">
+      <section id="solution" className="section-mobile">
+        <section id="mobileApp" className="section-mobile">
+          <section id="indoor" className="section-mobile">
+            <section id="outdoor" className="section-mobile">
               <Solution activeTab={activeTab} setActiveTab={setActiveTab}/>
             </section>
           </section>
