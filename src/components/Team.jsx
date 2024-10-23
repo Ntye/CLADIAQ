@@ -72,7 +72,7 @@ function Team() {
               />
             </div>
 
-            <div data-aos="fade-right">
+            <div data-aos="fade-right"className="team-member">
               <TeamMember
                 name={content.member_3.name}
                 post={content.member_3.post}
@@ -110,7 +110,7 @@ function Team() {
               />
             </div>
 
-            <div data-aos="fade-left">
+            <div data-aos="fade-left" className="team-member">
               <TeamMember
                 name={content.member_6.name}
                 post={content.member_6.post}
