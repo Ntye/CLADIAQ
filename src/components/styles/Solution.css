@@ -30,6 +30,12 @@
     margin-top: 50px;
 }
 
+.product-image {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
 .product-title {
     font-size: 2rem;
     padding-bottom: 2.5rem;

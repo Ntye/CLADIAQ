@@ -10,6 +10,7 @@ import Solution from "./components/Solution.jsx";
 import Team from "./components/Team.jsx";
 import Contact from "./components/Contact.jsx";
 import Feature from "./components/Feature.jsx";
+import homeImg from "../src/assets/Carousel/home-mob.png"
 
 
 function App() {
@@ -41,12 +42,22 @@ function App() {
     <>
     <DefaultNavbar activeTab={activeTab} setActiveTab={setActiveTab}/>
 
-    <section id="home" className="section">
-      {/*<DefaultCarousel/>*/}
-      <LandingCarousel/>
-    </section>
+      <section id="home" className="section">
+        {/*<DefaultCarousel/>*/}
+        <div className="home">
+          <LandingCarousel/>
+        </div>
 
-    <section id="about" className="section">
+        <div className=" home-mobile">
+          <img
+            src={homeImg}
+            alt="home-img"
+            className="home-img element"
+          />
+        </div>
+      </section>
+
+      <section id="about" className="section">
       <section id="mission" className="section">
         <AboutUs/>
       </section>

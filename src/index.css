@@ -26,6 +26,9 @@ body {
 
 }
 
+.home-mobile {
+  display: none;
+}
 
 .spacing {
   padding: 50px 200px;
@@ -39,7 +42,22 @@ body {
 
 /* Styles for phones */
 @media (max-width: 750px) {
+  .home {
+    display: none;
+  }
 
+  .home-mobile {
+    display: block;
+    margin-left: 10vw;
+    justify-content: center;
+  }
+
+  .home-img {
+    width: 80vw;
+
+    padding-top: 50px;
+    margin-top:  100px;
+  }
 }
 
 .element {
