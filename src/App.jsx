@@ -80,13 +80,13 @@ function App() {
         <Faq/>
       </section>
 
-      <section id="contact" className="section">
-        <Contact/>
-      </section>
+      {/*<section id="contact" className="section">*/}
+      {/*  <Contact/>*/}
+      {/*</section>*/}
 
-      <section id="contact" className="section-mobile">
-        <Contact/>
-      </section>
+      {/*<section id="contact" className="section-mobile">*/}
+      {/*  <Contact/>*/}
+      {/*</section>*/}
 
       <Footer/>
     </>
