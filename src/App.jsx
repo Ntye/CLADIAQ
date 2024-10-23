@@ -79,7 +79,7 @@ function App() {
         <Team/>
       </section>
 
-      <section id="team" className="section-mobile">
+      <section id="team-mobile" className="section-mobile">
         <TeamMobile/>
       </section>
 
