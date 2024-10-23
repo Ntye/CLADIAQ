@@ -47,64 +47,69 @@ function TeamMobile() {
       />
 
       <div className="team spacing justify-content-center">
-        <div data-aos="fade-right" className=" team-members">
-          <TeamMember
-            name={content.member_1.name}
-            post={content.member_1.post}
-            imgSrc={Harold}
-            className="team-member"
-            facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-            twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-            linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-          />
+        <div className=" team-members">
+          <div  data-aos="fade-right">
+            <TeamMember
+              name={content.member_1.name}
+              post={content.member_1.post}
+              imgSrc={Harold}
+              className="team-member"
+              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+            />
 
-          <TeamMember
-            name={content.member_2.name}
-            post={content.member_2.post}
-            imgSrc={Nina}
-            className="team-member"
-            facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-            twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-            linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-          />
+            <TeamMember
+              name={content.member_2.name}
+              post={content.member_2.post}
+              imgSrc={Nina}
+              className="team-member"
+              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+            />
 
-          <TeamMember
-            name={content.member_3.name}
-            post={content.member_3.post}
-            imgSrc={Nathanael}
-            facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-            twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-            linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-          />
+            <TeamMember
+              name={content.member_3.name}
+              post={content.member_3.post}
+              imgSrc={Nathanael}
+              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+            />
+          </div>
 
-          <TeamMember
-            name={content.member_4.name}
-            post={content.member_4.post}
-            imgSrc={Donald}
-            className="team-member"
-            facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-            twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-            linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-          />
 
-          <TeamMember
-            name={content.member_5.name}
-            post={content.member_5.post}
-            imgSrc={Estelle}
-            className="team-member"
-            facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-            twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-            linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-          />
+          <div  data-aos="fade-left">
+            <TeamMember
+              name={content.member_4.name}
+              post={content.member_4.post}
+              imgSrc={Donald}
+              className="team-member"
+              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+            />
 
-          <TeamMember
-            name={content.member_6.name}
-            post={content.member_6.post}
-            imgSrc={Wilfred}
-            facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-            twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-            linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-          />
+            <TeamMember
+              name={content.member_5.name}
+              post={content.member_5.post}
+              imgSrc={Estelle}
+              className="team-member"
+              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+            />
+
+            <TeamMember
+              name={content.member_6.name}
+              post={content.member_6.post}
+              imgSrc={Wilfred}
+              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+            />
+          </div>
         </div>
       </div>
 
