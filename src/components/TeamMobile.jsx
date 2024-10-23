@@ -49,7 +49,7 @@ function TeamMobile() {
         section="Our Team"
       />
 
-      <div className="team-mobile spacing justify-content-center">
+      <div className="team-mobile justify-content-center">
         <div data-aos="fade-left" className="team-card">
           <img src={Harold} className="team-image" alt="team-image"/>
           <div className="team-member-description">
