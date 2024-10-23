@@ -53,15 +53,15 @@ function App() {
       {/*  </section>*/}
       {/*</section>*/}
 
-      {/*  <section id="solution" className="section">*/}
-      {/*    <section id="mobileApp" className="section">*/}
-      {/*      <section id="indoor" className="section">*/}
-      {/*        <section id="outdoor" className="section">*/}
-      {/*          <Solution activeTab={activeTab} setActiveTab={setActiveTab}/>*/}
-      {/*        </section>*/}
-      {/*      </section>*/}
-      {/*    </section>*/}
-      {/*  </section>*/}
+        <section id="solution" className="section">
+          <section id="mobileApp" className="section">
+            <section id="indoor" className="section">
+              <section id="outdoor" className="section">
+                <Solution activeTab={activeTab} setActiveTab={setActiveTab}/>
+              </section>
+            </section>
+          </section>
+        </section>
 
 
       <section id="team" className="section">
