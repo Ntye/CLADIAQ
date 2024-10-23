@@ -49,7 +49,7 @@ function TeamMobile() {
         section="Our Team"
       />
 
-      <div className="team spacing justify-content-center">
+      <div className="team-mobile spacing justify-content-center">
         <div data-aos="fade-left" className="team-card">
           <img src={Harold} className="team-image" alt="team-image"/>
           <div className="team-member-description">
@@ -73,7 +73,6 @@ function TeamMobile() {
           </div>
           <p className="member-post lato-regular primary-gray">{content.member_1.post}</p>
         </div>
-
 
         <div data-aos="fade-left" className="team-card">
           <img src={Nina} className="team-image" alt="team-image"/>
@@ -123,7 +122,7 @@ function TeamMobile() {
           <p className="member-post lato-regular primary-gray">{content.member_3.post}</p>
         </div>
 
-        <div data-aos="fade-rightt" className="team-card">
+        <div data-aos="fade-right" className="team-card">
           <img src={Wilfred} className="team-image" alt="team-image"/>
           <div className="team-member-description">
             <div className="team-member">
@@ -147,7 +146,7 @@ function TeamMobile() {
           <p className="member-post lato-regular primary-gray">{content.member_4.post}</p>
         </div>
 
-        <div data-aos="fade-rightt" className="team-card">
+        <div data-aos="fade-right" className="team-card">
           <img src={Estelle} className="team-image" alt="team-image"/>
           <div className="team-member-description">
             <div className="team-member">
@@ -171,7 +170,7 @@ function TeamMobile() {
           <p className="member-post lato-regular primary-gray">{content.member_5.post}</p>
         </div>
 
-        <div data-aos="fade-rightt" className="team-card">
+        <div data-aos="fade-right" className="team-card">
           <img src={Donald} className="team-image" alt="team-image"/>
           <div className="team-member-description">
             <div className="team-member">

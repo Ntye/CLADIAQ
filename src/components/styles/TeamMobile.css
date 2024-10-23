@@ -1,7 +1,12 @@
-.team {
+.team-mobile {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: -20px;
+    justify-content: center;
+}
+
+.team-card {
+    margin-bottom: 20px;
 }
 
 .team-title {
