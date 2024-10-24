@@ -55,19 +55,19 @@ const Footer = () => {
               {content.socials}
             </h3>
             <div className="d-flex flex-row">
-              <Link to="mailto:cladiaq05@gmail.com" className="footer-social-link">
+              <Link to="https://web.facebook.com/CLADIAQ.CMR/" className="footer-social-link">
                 <img
                   src={Facebook}
                   alt="Facebook"
                 />
               </Link>
-              <Link to="mailto:cladiaq05@gmail.com" className="footer-social-link">
+              <Link to="https://www.linkedin.com/company/cladiaq-cmr/" className="footer-social-link">
                 <img
                   src={LinkedIn}
                   alt="LinkedIn"
                 />
               </Link>
-              <Link to="mailto:cladiaq05@gmail.com" className="footer-social-link">
+              <Link to="https://www.instagram.com/cladiaq_cmr/" className="footer-social-link">
                 <img
                   src={Instagram}
                   alt="Instagram"
