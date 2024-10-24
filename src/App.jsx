@@ -11,6 +11,7 @@ import Team from "./components/Team.jsx";
 import Contact from "./components/Contact.jsx";
 import Feature from "./components/Feature.jsx";
 import homeImg from "../src/assets/Carousel/home-mob.png"
+import Chatbot from "./components/Chatbot.jsx";
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
 
   return (
     <>
+    <Chatbot/>
     <DefaultNavbar activeTab={activeTab} setActiveTab={setActiveTab}/>
 
       <section id="home" className="section">

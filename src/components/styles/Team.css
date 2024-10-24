@@ -26,10 +26,6 @@
     margin-bottom: 2.5rem;
 }
 
-.team-illustration {
-    width: 40rem;
-}
-
 @media (max-width: 1400px) {
     .team-images {
         justify-content: center;

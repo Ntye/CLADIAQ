@@ -1,9 +1,9 @@
 import Icon from "../assets/Icon.svg";
 import Harold from "../assets/Team/Harold.png"
 import Nina from "../assets/Team/Nina.png"
-import Nathanael from "../assets/Team/Nathanael.png"
-import Donald from "../assets/Team/Donald.png"
-import Estelle from "../assets/Team/Estelle.png"
+import Nathanael from "../assets/Team/Nathanael.jpeg"
+import Donald from "../assets/Team/Donald.jpeg"
+import Estelle from "../assets/Team/Estelle.jpeg"
 import Wilfred from "../assets/Team/Wilfred.png"
 import HighFive from "../assets/Team/HighFive.svg"
 import "./styles/Team.css"
@@ -73,9 +73,9 @@ function Team() {
               name={content.member_3.name}
               post={content.member_3.post}
               imgSrc={Nathanael}
-              facebookLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-              twitterLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
-              linkedInLink="https://www.sciencedirect.com/science/article/abs/pii/S0761842518304674"
+              facebookLink="https://www.linkedin.com/in/nathanael-fotie-fotie-740807324/"
+              twitterLink="https://www.linkedin.com/in/nathanael-fotie-fotie-740807324/"
+              linkedInLink="https://www.linkedin.com/in/nathanael-fotie-fotie-740807324/"
             />
           </div>
 
@@ -114,7 +114,7 @@ function Team() {
         <img
           alt="high-five"
           src={HighFive}
-          className="element team-ilustration"
+          className="element team-illustration"
         />
       </div>
 
