@@ -3,6 +3,7 @@ import "./styles/Solution.css";
 import Icon from "../assets/Icon.svg";
 import Indoor from "../assets/Products/Indoorp.png";
 import Outdoor from "../assets/Products/Outdoor.png"
+import Mobile from "../assets/Products/mobile.png"
 import {Button, Col, FloatingLabel, Form} from "react-bootstrap";
 import Title from "../utilities/Title.jsx";
 import AOS from 'aos';
@@ -191,7 +192,7 @@ function Solution({ activeTab, setActiveTab }) {
               <img
                 data-aos="fade-right"
                 className="product-image"
-                src={Indoor}
+                src={Mobile}
                 alt="indoor-illustration"
               />
               <div data-aos="fade-left" className="product-text">
