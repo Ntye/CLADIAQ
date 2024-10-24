@@ -70,11 +70,11 @@ function AboutUs() {
             </a>
 
 
-            <a href="#team">
-              <Button className="lato-bold about-us-button">
-                {content.about_us.buttons.two}
-              </Button>
-            </a>
+            {/*<a href="#team">*/}
+            {/*  <Button className="lato-bold about-us-button">*/}
+            {/*    {content.about_us.buttons.two}*/}
+            {/*  </Button>*/}
+            {/*</a>*/}
 
           </div>
         </div>

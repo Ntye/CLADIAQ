@@ -45,7 +45,6 @@ function App() {
     <DefaultNavbar activeTab={activeTab} setActiveTab={setActiveTab}/>
 
       <section id="home" className="section">
-        {/*<DefaultCarousel/>*/}
         <div className="home">
           <LandingCarousel/>
         </div>
